@@ -6,6 +6,7 @@ class CreatePhones < ActiveRecord::Migration[5.1]
 
       t.timestamps
     end
-     add_foreign_key :phones, :users
+    add_foreign_key :phones, :users
+    add_index :phones, :user_id
   end
 end

@@ -1,0 +1,583 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"st",
+				"style\tTag"
+			],
+			[
+				"class",
+				"className"
+			],
+			[
+				"sele",
+				"select-course"
+			],
+			[
+				"remov",
+				"remove-course"
+			],
+			[
+				"r",
+				"row"
+			],
+			[
+				"re",
+				"remove"
+			],
+			[
+				"cl",
+				"click"
+			],
+			[
+				"pass",
+				"password"
+			],
+			[
+				"remove",
+				"remove_anchor"
+			],
+			[
+				"rem",
+				"remove_anchor"
+			],
+			[
+				"for",
+				"for\tFor Loop"
+			],
+			[
+				"p",
+				"prime"
+			],
+			[
+				"cours",
+				"course_id"
+			],
+			[
+				"cour",
+				"course_id"
+			],
+			[
+				"user",
+				"user_id"
+			],
+			[
+				"cre",
+				"CREATE"
+			],
+			[
+				"ch",
+				"chooseCourses"
+			],
+			[
+				"json",
+				"json"
+			],
+			[
+				"jso",
+				"json_encode"
+			],
+			[
+				"a",
+				"array\t$… = array (…)"
+			],
+			[
+				"di",
+				"div\tTag"
+			],
+			[
+				"marg",
+				"margin-top"
+			],
+			[
+				"true",
+				"TRUE"
+			],
+			[
+				"choos",
+				"choose-courses"
+			],
+			[
+				"User",
+				"userManager"
+			],
+			[
+				"Course",
+				"courseManager"
+			],
+			[
+				"depa",
+				"department_id"
+			],
+			[
+				"depar",
+				"departments"
+			],
+			[
+				"depart",
+				"Department"
+			],
+			[
+				"err",
+				"error_log"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"arra",
+				"array"
+			],
+			[
+				"de",
+				"dept"
+			],
+			[
+				"nu",
+				"num_rows"
+			],
+			[
+				"co",
+				"conn"
+			],
+			[
+				"ent",
+				"entity"
+			],
+			[
+				"get",
+				"get_object_vars"
+			],
+			[
+				"en",
+				"entity"
+			],
+			[
+				"var",
+				"var_dump"
+			],
+			[
+				"arr",
+				"array"
+			],
+			[
+				"_",
+				"_POST"
+			],
+			[
+				"get_cl",
+				"get_class_vars"
+			],
+			[
+				"is_n",
+				"is_null"
+			],
+			[
+				"si",
+				"sign_up_form"
+			],
+			[
+				"em",
+				"email"
+			],
+			[
+				"emai",
+				"email_pattern"
+			],
+			[
+				"if",
+				"if\t<?php if (…) ?> … <?php endif ?>"
+			],
+			[
+				"sign",
+				"sign_up"
+			],
+			[
+				"ke",
+				"key"
+			],
+			[
+				"ta",
+				"TABLE"
+			],
+			[
+				"cont",
+				"contributions"
+			],
+			[
+				"cand",
+				"candidates"
+			],
+			[
+				"comm",
+				"committees"
+			],
+			[
+				"com",
+				"committee_contributions"
+			],
+			[
+				"ca",
+				"candidates_with_ri_contributors"
+			],
+			[
+				"can",
+				"cand_id"
+			],
+			[
+				"cmte",
+				"cmte_id"
+			],
+			[
+				"cmtes",
+				"cmtes_groupedby_id"
+			],
+			[
+				"or",
+				"org_cmtes"
+			],
+			[
+				"commit",
+				"committees"
+			],
+			[
+				"d",
+				"distinct"
+			],
+			[
+				"dis",
+				"DISTINCT"
+			],
+			[
+				"id",
+				"id"
+			],
+			[
+				"av",
+				"avg_amount"
+			],
+			[
+				"CO",
+				"CONT"
+			],
+			[
+				"sub",
+				"subset"
+			],
+			[
+				"A",
+				"ArrayList"
+			],
+			[
+				"subs",
+				"subset"
+			],
+			[
+				"dependan",
+				"dependantOn"
+			],
+			[
+				"sta",
+				"static"
+			],
+			[
+				"popu",
+				"populateMain"
+			],
+			[
+				"rever",
+				"reversedStack"
+			],
+			[
+				"main",
+				"mainStack"
+			],
+			[
+				"rev",
+				"populateReversed"
+			],
+			[
+				"stack",
+				"stacks"
+			],
+			[
+				"ma",
+				"maxCapacity"
+			],
+			[
+				"Set",
+				"SetOfStacks"
+			],
+			[
+				"top",
+				"top_first"
+			],
+			[
+				"len",
+				"lenQ"
+			],
+			[
+				"le",
+				"lenP"
+			],
+			[
+				"longer",
+				"longerLen"
+			],
+			[
+				"res",
+				"result"
+			],
+			[
+				"v",
+				"v\tvariable"
+			],
+			[
+				"ne",
+				"next"
+			],
+			[
+				"sumLis",
+				"sumListsRec"
+			],
+			[
+				"Res",
+				"Result"
+			],
+			[
+				"i",
+				"imt\timport junit.framework.TestCase;"
+			],
+			[
+				"mem",
+				"memoize"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 132.0,
+		"last_filter": "Package Control: ins",
+		"selected_items":
+		[
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"c+",
+				"Set Syntax: C++"
+			],
+			[
+				"syntax sql",
+				"Set Syntax: SQL"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 485.0
+	},
+	"console":
+	{
+		"height": 146.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/alyswidan/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+		"/home/alyswidan/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings",
+		"/home/alyswidan/courses/web/rails/SocialNetwork/SocialNetwork/db/migrate/20171211202936_add_hometown_to_user.rb",
+		"/home/alyswidan/courses/web/rails/SocialNetwork/SocialNetwork/app/models/user.rb",
+		"/home/alyswidan/courses/web/rails/SocialNetwork/SocialNetwork/app/controllers/users_controller.rb",
+		"/home/alyswidan/courses/web/rails/SocialNetwork/SocialNetwork/app/views/users/_user.json.jbuilder",
+		"/home/alyswidan/courses/web/rails/SocialNetwork/SocialNetwork/app/views/users/index.json.jbuilder",
+		"/opt/lampp/htdocs/srf/log",
+		"/opt/lampp/htdocs/srf/api/login.php",
+		"/opt/lampp/htdocs/srf/chooseCourses.php",
+		"/opt/lampp/htdocs/srf/schema.sql",
+		"/opt/lampp/htdocs/srf/chooseDepartment.php",
+		"/opt/lampp/htdocs/srf/GenericEntityManager.php",
+		"/opt/lampp/htdocs/srf/Entity.php",
+		"/opt/lampp/htdocs/srf/CourseManager.php",
+		"/opt/lampp/htdocs/srf/Course.php",
+		"/opt/lampp/htdocs/srf/RegisterDepartment.php",
+		"/opt/lampp/htdocs/srf/process_request.php",
+		"/opt/lampp/htdocs/srf/registration.php",
+		"/opt/lampp/htdocs/srf/Department.php",
+		"/opt/lampp/htdocs/srf/User.php",
+		"/opt/lampp/htdocs/srf/index.php",
+		"/opt/lampp/htdocs/srf/department.php",
+		"/opt/lampp/htdocs/srf/DbConnection.php",
+		"/home/alyswidan/Desktop/machine-learning-ex1/ex1/ex1_multi.m",
+		"/home/alyswidan/Desktop/machine-learning-ex1/ex1/ex1.m",
+		"/home/alyswidan/courses/database koleia/Lab 2/welcome.php",
+		"/opt/lampp/htdocs/srf/seed_departments.sql",
+		"/opt/lampp/htdocs/srf/seed_courses.sql",
+		"/home/alyswidan/courses/Database cs186/cs186/hw3/part1/part1.sql",
+		"/home/alyswidan/courses/database koleia/Lab 2/Lab2.html",
+		"/home/alyswidan/courses/database koleia/srf/index.html",
+		"/home/alyswidan/.config/sublime-text-3/Packages/Package Control/Package Control.sublime-settings",
+		"/home/alyswidan/.config/sublime-text-3/Packages/User/SublimePHPIntel.sublime-settings",
+		"/home/alyswidan/courses/Database cs186/cs186/hw2/README.md",
+		"/home/alyswidan/courses/Database cs186/cs186/hw1_2012/hw1.sh",
+		"/home/alyswidan/courses/Database cs186/cs186/hw2/build/sbt",
+		"/home/alyswidan/courses/Database cs186/cs186/hw2/Makefile",
+		"/home/alyswidan/Desktop/test.py",
+		"/home/alyswidan/courses/Database cs186/cs186/hw2/build/sbt-launch-lib.bash",
+		"/home/alyswidan/courses/Database cs186/cs186/hw1_2012/parse_email.py",
+		"/media/alyswidan/60204AAD204A8A4C/Work/Machine learning/Andrew NG/week 4/machine-learning-ex3/ex3/predict.m"
+	],
+	"find":
+	{
+		"height": 26.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"echo",
+			"$JA",
+			"$sbt_jar",
+			"java_cmd"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 34.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/Python/Python.sublime-build",
+	"project": "manifest.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 132.0,
+		"last_filter": "a",
+		"selected_items":
+		[
+			[
+				"a",
+				"getAll"
+			]
+		],
+		"width": 392.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 310.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
