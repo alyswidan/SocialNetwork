@@ -2,168 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e5c4042-a33e-454d-b218-17eb0b73582b" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../.gitignore" afterPath="$PROJECT_DIR$/../.gitignore" />
-      <change beforePath="$PROJECT_DIR$/../README.md" afterPath="$PROJECT_DIR$/../README.md" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/.generators" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/.rakeTasks" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/SocialNetwork.iml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/feb0ace5-86e8-4db1-9b70-ab1bd7132b87.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/feb0ace5-86e8-4db1-9b70-ab1bd7132b87/storage_v2/_src_/database/SocialNetwork_development.3XcIJQ.meta" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/feb0ace5-86e8-4db1-9b70-ab1bd7132b87/storage_v2/_src_/database/SocialNetwork_development.3XcIJQ/schema/public.abK9xQ.meta" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Rakefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/assets/config/manifest.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/assets/config/manifest.sublime-workspace" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/.keep" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/application.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/cable.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/channels/.keep" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/custom.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/posts.coffee" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/sessions.coffee" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/users.coffee" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/posts.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/scaffolds.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/sessions.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/users.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/channels/application_cable/channel.rb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/channels/application_cable/connection.rb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/concerns/.keep" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/posts_controller.rb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/sessions_controller.rb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/users_controller.rb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/helpers/application_helper.rb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/helpers/posts_helper.rb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/helpers/sessions_helper.rb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/helpers/users_helper.rb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/jobs/application_job.rb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/mailers/application_mailer.rb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/models/application_record.rb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/models/city.rb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/models/concerns/.keep" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/models/friend.rb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/models/friend_request.rb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/models/like.rb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/models/phone.rb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/models/post.rb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/_header.html.erb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/mailer.html.erb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/mailer.text.erb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/views/posts/_form.html.erb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/views/posts/_post.json.jbuilder" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/views/posts/edit.html.erb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/views/posts/index.html.erb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/views/posts/index.json.jbuilder" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/views/posts/new.html.erb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/views/posts/show.html.erb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/views/posts/show.json.jbuilder" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/views/sessions/new.html.erb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/views/shared/_error_messages.erb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/views/users/_form.html.erb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/views/users/_user.json.jbuilder" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/views/users/edit.html.erb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/views/users/index.html.erb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/views/users/index.json.jbuilder" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/views/users/new.html.erb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/views/users/show.html.erb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/views/users/show.json.jbuilder" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/bin/bundle" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/bin/rails" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/bin/rake" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/bin/setup" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/bin/spring" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/bin/update" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/bin/yarn" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/config.ru" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/config/application.rb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/config/boot.rb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/config/cable.yml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/config/database.yml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/config/environment.rb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/config/environments/development.rb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/config/environments/production.rb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/config/environments/test.rb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/config/initializers/application_controller_renderer.rb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/config/initializers/assets.rb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/config/initializers/backtrace_silencers.rb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/config/initializers/cookies_serializer.rb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/config/initializers/filter_parameter_logging.rb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/config/initializers/inflections.rb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/config/initializers/mime_types.rb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/config/initializers/wrap_parameters.rb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/config/locales/en.yml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/config/puma.rb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/config/secrets.yml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/config/spring.rb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20171211193225_create_users.rb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20171211195419_create_posts.rb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20171211200054_create_phones.rb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20171211202603_create_cities.rb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20171211203300_add_hometown_to_users.rb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20171211204309_add_user_id_to_posts.rb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20171211204914_create_likes.rb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20171212182542_create_friend_requests.rb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20171212182603_create_friends.rb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20171212190847_create_friends.rb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/db/seeds.rb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/assets/.keep" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/tasks/.keep" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/log/.keep" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/package.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/404.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/422.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/500.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/apple-touch-icon-precomposed.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/apple-touch-icon.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/favicon.ico" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/robots.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/test/application_system_test_case.rb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/test/controllers/.keep" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/test/controllers/posts_controller_test.rb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/test/controllers/sessions_controller_test.rb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/test/controllers/users_controller_test.rb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/test/fixtures/.keep" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/test/fixtures/cities.yml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/test/fixtures/files/.keep" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/test/fixtures/friend_requests.yml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/test/fixtures/friends.yml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/test/fixtures/likes.yml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/test/fixtures/phones.yml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/test/fixtures/posts.yml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/test/fixtures/users.yml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/test/helpers/.keep" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/test/integration/.keep" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/test/mailers/.keep" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/test/models/.keep" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/test/models/city_test.rb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/test/models/friend_request_test.rb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/test/models/friend_test.rb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/test/models/like_test.rb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/test/models/phone_test.rb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/test/models/post_test.rb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/test/models/user_test.rb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/test/system/.keep" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/test/system/posts_test.rb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/test/system/users_test.rb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/test/test_helper.rb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tmp/.keep" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/.keep" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -225,7 +64,108 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="users_controller.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="30" column="18" lean-forward="false" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routes.rb" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config/routes.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="seeds.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/seeds.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="10" column="46" lean-forward="false" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="46" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="user.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1134">
+              <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sessions_controller.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/sessions_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_header.html.erb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/_header.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="8" column="31" lean-forward="false" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="12" column="2" lean-forward="false" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sessions_helper.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/helpers/sessions_helper.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="4" column="5" lean-forward="false" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="users.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/users.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="new.html.erb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/sessions/new.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -379,7 +319,7 @@
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
@@ -654,12 +594,12 @@
       <workItem from="1513256205853" duration="8291000" />
       <workItem from="1513348954426" duration="10656000" />
       <workItem from="1513423344746" duration="7291000" />
-      <workItem from="1513450331666" duration="7823000" />
+      <workItem from="1513450331666" duration="7673000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49625000" />
+    <option name="totallyTimeSpent" value="49475000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
