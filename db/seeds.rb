@@ -24,11 +24,11 @@ User.create!(first_name: "Example",
                password_confirmation: password,
                birthdate: birthdate)
 end
-# posts
-users = User.order(:created_at).take(6)
+# postsS
+users = User.order(:created_at).take(3)
 50.times do
-  content = Faker::Lorem.sentence(5)
-  users.each { |user| user.posts.create!(caption: content) }
+  caption = Faker::Lorem.sentence(5)
+  users.each { |user| user.posts.create!(caption: caption) }
 end
 
 # Following relationships

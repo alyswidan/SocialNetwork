@@ -11,6 +11,9 @@ class UsersController < ApplicationController
   # GET /users/1.json
   def show
     @user = User.find(params[:id])
+    # debugger
+    page = params[:page] || 1
+    @posts = @user.posts.paginate(page:page)
   end
 
   # GET /users/new
