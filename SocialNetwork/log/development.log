@@ -1,0 +1,36 @@
+  [1m[35m (7.0ms)[0m  [1m[34mSELECT pg_try_advisory_lock(3579009412087425540)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateFriendRequests (20171212182542)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (204.1ms)[0m  [1m[35mCREATE TABLE "friend_requests" ("id" bigserial primary key, "user_id" integer, "other_user_id" integer, "state" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (2.6ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_friend_requests_on_user_id_and_other_user_id" ON "friend_requests"  ("user_id", "other_user_id")[0m
+  [1m[35m (19.1ms)[0m  [1m[35mALTER TABLE "friend_requests" ADD CONSTRAINT "fk_rails_0094729689"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+ ON DELETE CASCADE[0m
+  [1m[35m (1.1ms)[0m  [1m[35mALTER TABLE "friend_requests" ADD CONSTRAINT "fk_rails_19fff24e76"
+FOREIGN KEY ("other_user_id")
+  REFERENCES "users" ("id")
+ ON DELETE CASCADE[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20171212182542"]]
+  [1m[35m (8.9ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateFriends (20171212190847)
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (18.4ms)[0m  [1m[35mCREATE TABLE "friends" ("id" bigserial primary key, "user_id" integer, "other_user_id" integer, "isblock" boolean, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (2.3ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_friends_on_user_id_and_other_user_id" ON "friends"  ("user_id", "other_user_id")[0m
+  [1m[35m (1.8ms)[0m  [1m[35mALTER TABLE "friends" ADD CONSTRAINT "fk_rails_9cfeeb4593"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+ ON DELETE CASCADE[0m
+  [1m[35m (1.0ms)[0m  [1m[35mALTER TABLE "friends" ADD CONSTRAINT "fk_rails_b147a4f42c"
+FOREIGN KEY ("other_user_id")
+  REFERENCES "users" ("id")
+ ON DELETE CASCADE[0m
+  [1m[35mSQL (10.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20171212190847"]]
+  [1m[35m (8.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(3579009412087425540)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
