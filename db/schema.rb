@@ -10,7 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20171217112321) do
+=======
+ActiveRecord::Schema.define(version: 20171217150903) do
+>>>>>>> master
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -85,6 +89,7 @@ ActiveRecord::Schema.define(version: 20171217112321) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.bigint "city_id"
+    t.boolean "admin", default: false
     t.index ["city_id"], name: "index_users_on_city_id"
     t.index ["email"], name: "index_users_on_email"
     t.index ["first_name", "last_name"], name: "index_users_on_first_name_and_last_name"
