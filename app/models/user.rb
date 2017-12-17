@@ -21,7 +21,7 @@ class User < ApplicationRecord
   validates :first_name, presence: true
   validates :last_name, presence: true
   validates :birthdate, presence: true
-  validates :password, length: { minimum: 5}
+  validates :password, length: { minimum: 5},allow_blank: true
 
 
   def buddies
@@ -41,9 +41,12 @@ class User < ApplicationRecord
 
   def birthdate=(date)
 
-    if !date.empty?
+    if date.class == String && date != ''
       super Date.strptime date, "%m/%d/%Y"
+    else
+      super
     end
+
   end
   def full_name
     "#{first_name} #{last_name}"
