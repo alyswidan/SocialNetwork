@@ -28,7 +28,7 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
 
     if @user.save
-      log_in @user
+      helpers.log_in @user
       flash[:success] = "Welcome #{@user.full_name}"
       redirect_to @user
     else
@@ -70,6 +70,6 @@ class UsersController < ApplicationController
     def user_params
       params.require(:user).permit(:first_name, :last_name, :nickname,
                                    :password, :password_confirmation, :email, :gender,
-                                   :marital_status, :birthdate, :about_me)
+                                   :marital_status, :birthdate, :about_me, :picture)
     end
 end
