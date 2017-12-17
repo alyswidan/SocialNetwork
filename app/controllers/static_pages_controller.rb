@@ -1,7 +1,7 @@
 class StaticPagesController < ApplicationController
 
   def home
-    @post = current_user.posts.build if logged_in?
+    @post = helpers.current_user.posts.build if helpers.logged_in?
   end
 
   def help

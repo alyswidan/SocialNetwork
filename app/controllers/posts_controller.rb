@@ -25,7 +25,7 @@ class PostsController < ApplicationController
   # POST /posts
   # POST /posts.json
   def create
-    @mpost = current_user.posts.build(post_params)
+    @post = helpers.current_user.posts.build(post_params)
     if @post.save
       flash[:success] = "post created!"
       redirect_to root_url
