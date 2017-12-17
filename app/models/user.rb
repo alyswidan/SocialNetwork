@@ -1,7 +1,7 @@
 class User < ApplicationRecord
   enum marital_status: [:single, :married, :divorced, :engaged]
   enum  gender: [:male, :female, :not_specified]
-  has_many :posts
+  has_many :posts,dependent: :destroy
   has_many :phones
   has_one :city
   has_many :friend_requests
@@ -41,7 +41,7 @@ class User < ApplicationRecord
 
   def birthdate=(date)
 
-    if date.class == String && date != ''
+    if date.class == String && !date.empty?
       super Date.strptime date, "%m/%d/%Y"
     else
       super
@@ -62,6 +62,9 @@ class User < ApplicationRecord
     !Friend.where(other_user_id: other_user.id, user_id: self.id).empty? \
  || !Friend.where(other_user_id: self.id, user_id: other_user.id).empty?
 
+  end
+  def index
+    @users = User.paginate(page: params[:page])
   end
 
 

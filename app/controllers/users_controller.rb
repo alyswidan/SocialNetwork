@@ -14,12 +14,16 @@ class UsersController < ApplicationController
   # GET /users/1.json
   def show
     @user = User.find(params[:id])
+    # debugger
+    page = params[:page] || 1
+    @posts = @user.posts.paginate(page:page)
   end
 
   # GET /users/new
   def new
     @user = User.new
   end
+
 
   # GET /users/1/edit
   def edit
@@ -32,13 +36,14 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
 
     if @user.save
-      log_in @user
+      login_url @user
       flash[:success] = "Welcome #{@user.full_name}"
       redirect_to @user
     else
       render 'new'
     end
   end
+
 
   # PATCH/PUT /users/1
   # PATCH/PUT /users/1.json
