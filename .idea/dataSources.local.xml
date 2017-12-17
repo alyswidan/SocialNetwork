@@ -11,7 +11,8 @@
         <identifier-quote-string>&quot;</identifier-quote-string>
       </database-info>
       <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
-      <user-name>postgres</user-name>
+      <secret-storage>master_key</secret-storage>
+      <user-name>mahinour</user-name>
       <introspection-schemas>SocialNetwork_development:public</introspection-schemas>
     </data-source>
     <data-source name="Rails SocialNetwork: test" uuid="277e2ff1-4b16-4b50-a5ae-87048f5ed83f">
