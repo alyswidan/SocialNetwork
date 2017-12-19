@@ -36,4 +36,5 @@ end
 users = User.all
 user = users.first
 buddies = users[2..50]
-buddies.each { |buddy| user.add_friend(buddy) }
+buddies.each { |buddy| user.send_request(buddy) }
+

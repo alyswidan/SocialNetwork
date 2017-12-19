@@ -4,11 +4,15 @@ class User < ApplicationRecord
   has_many :posts,dependent: :destroy
   has_many :phones
   has_one :city
-  has_many :friend_requests
-  has_many :friends
 
-  has_many :sent_requests, through: :friend_requests, source: :other_user
-  has_many :received_requests, through: :friend_requests,source: :user
+  has_many :friends
+  has_many :sent_requests, class_name: "FriendRequest",
+                                      foreign_key: "user_id",
+                                      dependent: :destroy
+
+  has_many :received_requests, class_name: "FriendRequest",
+           foreign_key: "other_user_id",
+           dependent: :destroy
 
   has_many(:buddies, through: :friends, source: :other_user)
   has_secure_password
@@ -54,6 +58,16 @@ class User < ApplicationRecord
   def add_friend(other_user)
     friends.create(other_user_id: other_user.id)
   end
+  def send_request(other_user)
+    sent_requests.create(other_user_id: other_user.id)
+  end
+  def accept_request(friend_request)
+    if friend_request.other_user.id == self.id
+      add_friend(friend_request.user)
+      friend_request.destroy
+    end
+  end
+
   def remove_friend(other_user)
     friends.find_by(other_user_id: other_user.id).destroy
   end
