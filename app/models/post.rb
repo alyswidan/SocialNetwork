@@ -1,6 +1,6 @@
 class Post < ApplicationRecord
   belongs_to :user
-  default_scope -> { order(created_at: :desc) }
+  #default_scope -> { order(created_at: :desc) }
   mount_uploader :picture, PictureUploader
   validates :caption, presence: true , length: { maximum: 500 }
   validates :user_id, presence:true

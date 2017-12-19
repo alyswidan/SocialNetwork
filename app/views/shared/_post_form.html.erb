@@ -3,7 +3,8 @@
   <div class="field">
     <%= f.text_area :caption, placeholder: "Compose new post..." %>
   </div>
-  <%= check_box("private Post",@post.is_public, {checked:true}) %>
+
+ <%= f.check_box :is_public, {}, "true", "false" %>
   <%= f.submit "Post", class: "btn btn-primary" %>
   <span class="picture">
 <%= f.file_field :picture, accept: 'image/jpeg,image/gif,image/png' %>
