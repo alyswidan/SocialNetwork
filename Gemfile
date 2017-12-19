@@ -16,6 +16,10 @@ gem 'will_paginate'
 gem 'bootstrap-will_paginate'
 gem 'jquery-ui-rails', '5.0.5'
 gem 'bootstrap-datepicker-rails'
+#image upload
+gem 'carrierwave'
+gem 'mini_magick'
+gem 'fog'
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 0.21.0'
 # Use Puma as the app server

@@ -1,6 +1,9 @@
 <li id="post-<%= post.id %>">
   <span class="user"><%= link_to post.user.full_name, post.user %></span>
-  <span class="caption"><%= post.caption %></span>
+  <span class="caption">
+    <%= post.caption %>
+    <%= image_tag post.picture.url if post.picture? %>
+  </span>
   <span class="timestamp">
 Posted <%= time_ago_in_words(post.created_at) %> ago.
 </span>
