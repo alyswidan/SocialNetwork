@@ -41,9 +41,15 @@ class User < ApplicationRecord
   def feed
     query1= Post.where(:is_public => true)
     friend_ids = buddies.ids.join(",")
-    query2=Post.where("user_id IN (#{friend_ids})
+    if friend_ids.present?
+      query2=Post.where("user_id IN (#{friend_ids})
 OR user_id = :user_id and is_public=false", user_id: id)
-   Post.from("(#{query1.to_sql} Union #{query2.to_sql}) AS Posts").order(created_at: :desc)
+      Post.from("(#{query1.to_sql} Union #{query2.to_sql}) AS Posts").order(created_at: :desc)
+    else
+      Post.where(:is_public => true)
+    end
+
+
   end
 
 
