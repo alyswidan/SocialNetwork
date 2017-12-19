@@ -38,6 +38,13 @@ class User < ApplicationRecord
     User.from("(#{option1.to_sql} UNION #{option2.to_sql}) AS users")
   end
 
+  def feed
+    freind_ids = "SELECT other_user_id FROM freinds
+WHERE user_id = :user_id"
+    posts.where("user_id IN (#{freind_ids})
+OR user_id = :user_id", user_id: id)
+  end
+
 
   def birthdate=(date)
 
