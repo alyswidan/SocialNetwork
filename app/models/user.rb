@@ -68,8 +68,15 @@ class User < ApplicationRecord
     end
   end
 
+
   def remove_friend(other_user)
-    friends.find_by(other_user_id: other_user.id).destroy
+    me_on_left = friends.find_by(other_user_id: other_user.id)
+    me_on_right = Friend.where(user_id: other_user.id,other_user_id: self.id)[0]
+    if !me_on_left.nil?
+      me_on_left.destroy
+    else
+      me_on_right.destroy
+    end
   end
 
   def is_friends_with?(other_user)
