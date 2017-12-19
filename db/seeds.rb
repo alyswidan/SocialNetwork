@@ -11,7 +11,8 @@ User.create!(first_name: "Example",
              email: "example@railstutorial.org",
              password: "password",
              password_confirmation: "password",
-             birthdate: 10.years.ago)
+             birthdate: 10.years.ago,
+             admin:true)
 99.times do |n|
   name = Faker::Name.name
   email = "example-#{n+1}@railstutorial.org"
@@ -24,11 +25,11 @@ User.create!(first_name: "Example",
                password_confirmation: password,
                birthdate: birthdate)
 end
-# posts
-users = User.order(:created_at).take(6)
+# postsS
+users = User.order(:created_at).take(3)
 50.times do
-  content = Faker::Lorem.sentence(5)
-  users.each { |user| user.posts.create!(caption: content) }
+  caption = Faker::Lorem.sentence(5)
+  users.each { |user| user.posts.create!(caption: caption) }
 end
 
 # Following relationships

@@ -1,25 +1,23 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title></title>
-    <%= csrf_meta_tags %>
 
-    <!--Google Font-->
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,700i" rel="stylesheet">
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+<head>
+  <title><%= full_title(yield(:title)) %></title>
 
-  <body>
+  <!--Google Font-->
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,700i" rel="stylesheet">
 
-    <%= render 'layouts/header' %>
-
-    <% flash.each do |message_type, message| %>
-      <div class="alert alert-<%= message_type %>">
-        <%= message %>
-      </div>
-    <% end %>
-
-    <%= yield %>
-  </body>
+  <%= stylesheet_link_tag "application", media: "all",
+                          "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+<%= csrf_meta_tags %>
+  <%= render 'layouts/shim' %>
+</head>
+<body>
+<%= render 'layouts/header' %>
+<div class="container">
+  <%= yield %>
+  <%= render 'layouts/footer' %>
+</div>
+</body>
 </html>

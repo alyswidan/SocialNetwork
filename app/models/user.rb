@@ -1,7 +1,7 @@
 class User < ApplicationRecord
   enum marital_status: [:single, :married, :divorced, :engaged]
   enum  gender: [:male, :female, :not_specified]
-  has_many :posts
+  has_many :posts,dependent: :destroy
   has_many :phones
   has_one :city
   has_many :friend_requests
@@ -21,9 +21,13 @@ class User < ApplicationRecord
   validates :first_name, presence: true
   validates :last_name, presence: true
   validates :birthdate, presence: true
+<<<<<<< HEAD
   validates :password, length: { minimum: 5}
   mount_uploader :picture, PictureUploader
   validate :picture_size
+=======
+  validates :password, length: { minimum: 5},allow_blank: true
+>>>>>>> master
 
 
   def buddies
@@ -43,9 +47,12 @@ class User < ApplicationRecord
 
   def birthdate=(date)
 
-    if !date.empty?
+    if date.class == String && !date.empty?
       super Date.strptime date, "%m/%d/%Y"
+    else
+      super
     end
+
   end
   def full_name
     "#{first_name} #{last_name}"
@@ -61,6 +68,9 @@ class User < ApplicationRecord
     !Friend.where(other_user_id: other_user.id, user_id: self.id).empty? \
  || !Friend.where(other_user_id: self.id, user_id: other_user.id).empty?
 
+  end
+  def index
+    @users = User.paginate(page: params[:page])
   end
 
   # Validates the size of an uploaded picture.
