@@ -1,4 +1,73 @@
 <% provide(:title, @user.full_name) %>
+<div class="container">
+  <!-- TIMELINE  -->
+  <div class="timeline">
+    < class="timeline-cover">
+      <div class="timeline-nav-bar hidden-sm hidden-xs">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="profile-info">
+              <%= image_tag("rss.jpg", :alt => "") %>
+              <h3><%= @user.full_name %></h3>
+              <p class="text-muted"><%= @user.nickname %></p>
+            </div>
+          </div>>
+          <div class="col-md-9">
+            <ul class="list-inline-profile-menu">
+              <li><%= link_to("Timeline",user_url(:anchor => "show"),{:class => "active"})%></li>
+              <li><%= link_to("About",user_url(:anchor => @user.about_me))%></li>
+              <li><%= link_to("Album",user_url(:anchor => "show"))%></li>
+              <li><%= link_to("Friends",user_url(:anchor => @user.friends))%></li>
+            </ul>
+            <ul class="follow-me list-inline">
+              <li>1,299 people following you </li>
+              <li><%= button_to "Add Friend", {class: 'btn btn-small'} %></li>
+            </ul>
+          </div>
+        </div>>""
+    </div>>
+  </div>
+</div>>
+  <!-- TIMELINE END -->
+
+<div id="page-contents">
+  <div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-7">
+      <!--
+      post create box
+      ================
+      ================-->
+      <div class="create-post">
+        <div class="row">
+          <div class="col-md-7">
+            <div class="from-group">
+              <%= image_tag("rss.jpg", :alt => "") %>
+              <%= text_area() %>
+              <%= text_area() %>
+            </div>
+          </div>
+          <div class="col-md-5 col-md-5">
+            <div class="tools">
+              <ul class="ublishing-tools list-inline"></ul>
+              <li>
+                <%= link_to("#",user_url(:anchor => @user.about_me))%>
+              </li>
+            </div>
+            <div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+  <!--
+
 <div class="row">
   <aside class="col-md-4">
     <section class="user_info">
@@ -18,4 +87,4 @@
     <% end %>
   </div>
 
-</div>
+</div>-->

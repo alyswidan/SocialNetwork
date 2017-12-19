@@ -36,11 +36,8 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
 
     if @user.save
-<<<<<<< HEAD
       helpers.log_in @user
-=======
       login_url @user
->>>>>>> master
       flash[:success] = "Welcome #{@user.full_name}"
       redirect_to @user
     else

@@ -1,14 +1,38 @@
 <% provide(:title, "Log in") %>
 <h1>Log in</h1>
-<div class="row">
-  <div class="col-md-6 col-md-offset-3">
     <%= form_for(:session, url: login_path) do |f| %>
-      <%= f.label :email %>
-      <%= f.email_field :email, class: 'form-control' %>
-      <%= f.label :password %>
-      <%= f.password_field :password, class: 'form-control' %>
+      <div class="row">
+        <div class="form-group col-xs-12">
+          <%= f.label :email, class: "sr-only" %>
+          <%= f.email_field :email, class: 'form-control input-group-lg' %>
+        </div>
+      </div>
+      <div class="row">
+        <div class="form-group col-xs-12">
+          <%= f.label :password, class:"sr-only" %>
+          <%= f.password_field :password, class: 'form-control input-group-lg' %>
+        </div>
+      </div>
       <%= f.submit "Log in", class: "btn btn-primary" %>
     <% end %>
     <p>New user? <%= link_to "Sign up now!", signup_path %></p>
+
+<!--
+
+&lt;!&ndash;Login Form&ndash;&gt;
+<form name="Login_form" id='Login_form'>
+  <div class="row">
+    <div class="form-group col-xs-12">
+      <label for="my-email" class="sr-only">Email</label>
+      <input id="my-email" class="form-control input-group-lg" type="text" name="Email" title="Enter Email" placeholder="Your Email"/>
+    </div>
   </div>
-</div>
+  <div class="row">
+    <div class="form-group col-xs-12">
+      <label for="my-password" class="sr-only">Password</label>
+      <input id="my-password" class="form-control input-group-lg" type="password" name="password" title="Enter password" placeholder="Password"/>
+    </div>
+  </div>
+</form>
+&lt;!&ndash;Login Form Ends&ndash;&gt;
+-->

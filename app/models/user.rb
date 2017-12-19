@@ -21,13 +21,10 @@ class User < ApplicationRecord
   validates :first_name, presence: true
   validates :last_name, presence: true
   validates :birthdate, presence: true
-<<<<<<< HEAD
-  validates :password, length: { minimum: 5}
   mount_uploader :picture, PictureUploader
   validate :picture_size
-=======
+
   validates :password, length: { minimum: 5},allow_blank: true
->>>>>>> master
 
 
   def buddies
