@@ -39,9 +39,8 @@ class User < ApplicationRecord
   end
 
   def feed
-    freind_ids = "SELECT other_user_id FROM freinds
-WHERE user_id = :user_id"
-    posts.where("user_id IN (#{freind_ids})
+    friend_ids = buddies.ids
+    posts.where("user_id IN (#{friend_ids})
 OR user_id = :user_id", user_id: id)
   end
 
