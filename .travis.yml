@@ -1,0 +1,10 @@
+language: ruby
+rvm:
+- 2.3.1
+deploy:
+  provider: heroku
+  api_key:
+    secure: Sam5YjCZ1YNrVeemEdYimrgkfg8g9TlM9WPjWOxzisKugbHWQDDuDGHvq8h4eeh+nm2qOSlapZjU5aZ6GgJ5gNDOIXUQL0IMx2SSpzzsHAm9HL2I7DFsbQvLBdQHmR69fyLuxvbb20F9GEvomXJcDW9EIsLc6uRGtkmzvfIa+NShEu0TbeCvXCvA5vTH4+HjWL6yTtO3JHLUHh6asBYnLArxrfua1BbC11oHvafZZMneox8FNBoxCnIh6Myh+ip5L6PeHvg1DNbvnkqiivZA/0BLpUxPv20ScV0+csosNdibfMzfPv37Pq6xh3sqWftOIfsrLikZyIkI7zePIvOddrHfJ4u/Md9ovG1XJbNXo5ve78r6TAh3SuJZPQPVoRz5LE9JLlCPLkWyDd1RxJxIKyi6bi8OHqyLt5yfB8HJMkPNSpgMkVW4SK4P8WKM0+SGe7nCuaNruRQ7FrPalJOZercdYbsnMl5skPBsrFRWLFVYE+XP+8Y7nw37NWYnTw7bZ+caXn35QNvJ/VxH4hXqtndUQw+rm67qc77V8wTOFhyXMatagd3GNAZvw9Ir84v7cpBARPAlxutVjAPtNzdl3TJpZxORGEr/yV7ygqLhMnr1NfpBQ6uxgAUTycP1hyzxH0fhqVUqAscRpbVxGjKh6UkQ687Wjla/2R7DqGP+ddw=
+  app: hidden-ridge-49642
+  on:
+    repo: alyswidan/SocialNetwork
