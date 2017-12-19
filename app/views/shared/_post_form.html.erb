@@ -3,6 +3,6 @@
   <div class="field">
     <%= f.text_area :caption, placeholder: "Compose new post..." %>
   </div>
-  <%= check_box("private Post",@post.is_public, {checked: false}) %>
+  <%= check_box("private Post",@post.is_public, {checked:true}) %>
   <%= f.submit "Post", class: "btn btn-primary" %>
 <% end %>
