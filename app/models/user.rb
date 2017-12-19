@@ -39,7 +39,7 @@ class User < ApplicationRecord
   end
 
   def feed
-    friend_ids = buddies.ids
+    friend_ids = buddies.ids.join(",")
     posts.where("user_id IN (#{friend_ids})
 OR user_id = :user_id", user_id: id)
   end
