@@ -21,7 +21,9 @@
 
 
               <!--Register Form-->
-              <%= form_for(@user,  html: { multipart: true }, id:'registration_form', class:'form-inline' ) do |f| %>
+              <%= form_for(@user,  html: { multipart: true },
+                           id:'registration_form',
+                           class:'form-inline' ) do |f| %>
                 <div class="row">
                   <div class="form-group col-xs-6">
                     <%= f.label :first_name, class:'sr-only'%>
