@@ -30,8 +30,11 @@ class User < ApplicationRecord
     end
     #unlike a post
     def unlike(post)
-      likes.find_by(fpost_id: post.id).destroy
+      likes.find_by(post_id: post.id).destroy
     end
+  def likes?(post)
+    likes.find_by(post_id: post.id).any?
+  end
 
   def buddies
     option1 = User.

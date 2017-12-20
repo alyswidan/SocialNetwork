@@ -26,8 +26,8 @@ User.create!(first_name: "Example",
                birthdate: birthdate)
 end
 # postsS
-users = User.order(:created_at).take(3)
-1.times do
+users = User.order(:created_at).take(7)
+5.times do
   caption = Faker::Lorem.sentence(5)
   users.each { |user| user.posts.create!(caption: caption) }
 end
@@ -37,3 +37,8 @@ users = User.all
 user = users.first
 buddies = users[2..50]
 buddies.each { |buddy| user.add_friend(buddy) }
+
+# Likes
+posts = Post.all
+first_post = posts.first
+users.each { |user| user.like(first_post) }
