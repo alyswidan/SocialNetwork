@@ -21,13 +21,10 @@ class User < ApplicationRecord
   validates :first_name, presence: true
   validates :last_name, presence: true
   validates :birthdate, presence: true
-<<<<<<< HEAD
-  validates :password, length: { minimum: 5}
+
   mount_uploader :picture, PictureUploader
   validate :picture_size
-=======
   validates :password, length: { minimum: 5},allow_blank: true
->>>>>>> master
 
 
   def buddies
@@ -35,11 +32,11 @@ class User < ApplicationRecord
         select('u2.*').
         joins('as u1 inner join friends on u1.id=friends.other_user_id
                inner join users as u2 on u2.id=friends.user_id').
-        where('friends.other_user_id'=>self.id)
+        where('friends.other_user_id'=>id)
 
     option2 = User.
         joins('inner join friends on users.id = friends.other_user_id').
-        where('friends.user_id'=>self.id)
+        where('friends.user_id'=>id)
 
     User.from("(#{option1.to_sql} UNION #{option2.to_sql}) AS users")
   end
@@ -61,12 +58,20 @@ class User < ApplicationRecord
     friends.create(other_user_id: other_user.id)
   end
   def remove_friend(other_user)
-    friends.find_by(other_user_id: other_user.id).destroy
+    me_on_left = friends.find_by(other_user_id: other_user.id)
+    me_on_right = Friend.where(user_id: other_user.id, other_user_id: self.id)[0]
+    if !me_on_left.nil?
+      me_on_left.destroy
+    else
+      me_on_right.destroy
+    end
+
+
   end
 
   def is_friends_with?(other_user)
-    !Friend.where(other_user_id: other_user.id, user_id: self.id).empty? \
- || !Friend.where(other_user_id: self.id, user_id: other_user.id).empty?
+    !Friend.where(other_user_id: other_user.id, user_id: id).empty? \
+ || !Friend.where(other_user_id: id, user_id: other_user.id).empty?
 
   end
   def index

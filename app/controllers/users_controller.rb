@@ -24,7 +24,6 @@ class UsersController < ApplicationController
     @user = User.new
   end
 
-
   # GET /users/1/edit
   def edit
     @user = User.find(params[:id])
@@ -36,11 +35,8 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
 
     if @user.save
-<<<<<<< HEAD
       helpers.log_in @user
-=======
       login_url @user
->>>>>>> master
       flash[:success] = "Welcome #{@user.full_name}"
       redirect_to @user
     else
@@ -48,14 +44,13 @@ class UsersController < ApplicationController
     end
   end
 
-
   # PATCH/PUT /users/1
   # PATCH/PUT /users/1.json
   def update
     @user = User.find(params[:id])
     if @user.update_attributes(user_params)
      flash[:success] = "Profile updated"
-      redirect_to @user
+     redirect_to @user
     else
       render 'edit'
     end
@@ -71,16 +66,17 @@ class UsersController < ApplicationController
 
   private
     # Use callbacks to share common setup or constraints between actions.
-    def set_user
-      @user = User.find(params[:id])
-    end
+  def set_user
+    @user = User.find(params[:id])
+  end
 
     # Never trust parameters from the scary internet, only allow the white list through.
-    def user_params
-      params.require(:user).permit(:first_name, :last_name, :nickname,
-                                   :password, :password_confirmation, :email, :gender,
-                                   :marital_status, :birthdate, :about_me, :picture)
-    end
+  def user_params
+    params.require(:user).permit(:first_name, :last_name, :nickname,
+                                 :password, :password_confirmation, :email, :gender,
+                                 :marital_status, :birthdate, :about_me, :picture)
+  end
+
   def logged_in_user
     unless helpers.logged_in?
       #helpers.store_location

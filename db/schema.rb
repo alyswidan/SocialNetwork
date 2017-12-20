@@ -10,9 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-
-ActiveRecord::Schema.define(version: 20171217150903) do
-
+ActiveRecord::Schema.define(version: 20171217182345) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -21,7 +19,6 @@ ActiveRecord::Schema.define(version: 20171217150903) do
     t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["name"], name: "index_cities_on_name"
   end
 
   create_table "friend_requests", force: :cascade do |t|
@@ -30,9 +27,7 @@ ActiveRecord::Schema.define(version: 20171217150903) do
     t.integer "state"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["other_user_id"], name: "index_friend_requests_on_other_user_id"
     t.index ["user_id", "other_user_id"], name: "index_friend_requests_on_user_id_and_other_user_id", unique: true
-    t.index ["user_id"], name: "index_friend_requests_on_user_id"
   end
 
   create_table "friends", force: :cascade do |t|
@@ -65,23 +60,22 @@ ActiveRecord::Schema.define(version: 20171217150903) do
   end
 
   create_table "posts", force: :cascade do |t|
-    t.text "caption", null: false
-    t.boolean "is_public", default: true
+    t.string "caption"
+    t.boolean "is_public"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "user_id"
-
   end
 
   create_table "users", force: :cascade do |t|
-    t.string "first_name", null: false
-    t.string "last_name", null: false
+    t.string "first_name"
+    t.string "last_name"
     t.string "nickname"
-    t.string "password_digest", null: false
-    t.string "email", null: false
+    t.string "password_digest"
+    t.string "email"
     t.integer "gender"
     t.integer "marital_status"
-    t.date "birthdate", null: false
+    t.date "birthdate"
     t.text "about_me"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -89,10 +83,6 @@ ActiveRecord::Schema.define(version: 20171217150903) do
     t.string "picture"
     t.boolean "admin", default: false
     t.index ["city_id"], name: "index_users_on_city_id"
-    t.index ["email"], name: "index_users_on_email"
-    t.index ["first_name", "last_name"], name: "index_users_on_first_name_and_last_name"
-    t.index ["first_name"], name: "index_users_on_first_name"
-    t.index ["last_name"], name: "index_users_on_last_name"
   end
 
   add_foreign_key "friend_requests", "users", column: "other_user_id", on_delete: :cascade
