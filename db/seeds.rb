@@ -27,7 +27,7 @@ User.create!(first_name: "Example",
 end
 # postsS
 users = User.order(:created_at).take(3)
-50.times do
+1.times do
   caption = Faker::Lorem.sentence(5)
   users.each { |user| user.posts.create!(caption: caption) }
 end
