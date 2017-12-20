@@ -6,6 +6,7 @@ class User < ApplicationRecord
   has_one :city
   has_many :friend_requests
   has_many :friends
+  has_many :likes,dependent: :destroy
 
   has_many :sent_requests, through: :friend_requests, source: :other_user
   has_many :received_requests, through: :friend_requests,source: :user
@@ -23,6 +24,14 @@ class User < ApplicationRecord
   validates :birthdate, presence: true
   validates :password, length: { minimum: 5},allow_blank: true
 
+  #like a post
+  def like(post)
+    likes.create(post_id: post.id)
+    end
+    #unlike a post
+    def unlike(post)
+      likes.find_by(fpost_id: post.id).destroy
+    end
 
   def buddies
     option1 = User.
