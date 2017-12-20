@@ -15,8 +15,8 @@ class User < ApplicationRecord
 
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
   validates :email, presence: true, length: { maximum: 255 },
-            format: { with: VALID_EMAIL_REGEX },
-            uniqueness: true
+                    format: { with: VALID_EMAIL_REGEX },
+                    uniqueness: true
   before_save { self.email = email.downcase }
   validates :first_name, presence: true
   validates :last_name, presence: true
@@ -42,14 +42,15 @@ class User < ApplicationRecord
   end
 
   def feed
-    query1= Post.where(:is_public => true)
+    query1= Post.where(is_public: true)
     friend_ids = buddies.ids.join(",")
     if friend_ids.present?
       query2=Post.where("user_id IN (#{friend_ids})
 OR user_id = :user_id and is_public=false", user_id: id)
-      Post.from("(#{query1.to_sql} Union #{query2.to_sql}) AS Posts").order(created_at: :desc)
+      Post.from("(#{query1.to_sql} Union #{query2.to_sql}) AS Posts")
+          .order(created_at: :desc)
     else
-      Post.where(:is_public => true)
+      Post.where(is_public: true)
     end
 
 

@@ -1,11 +1,41 @@
-<li id="post-<%= post.id %>">
-  <span class="user"><%= link_to post.user.full_name, post.user %></span>
-  <span class="caption">
-    <%= post.caption %>
-    <%= image_tag post.picture.url if post.picture? %>
-  </span>
-  <span class="timestamp">
-Posted <%= time_ago_in_words(post.created_at) %> ago.
-</span>
-</li>
+<div class="post-content">
+
+  <!--Post Date-->
+  <div class="post-date hidden-xs hidden-sm">
+    <h5><%= post.user.first_name %></h5>
+    <p class="text-grey"><%= time_ago_in_words(post.created_at) %> ago.</p>
+  </div><!--Post Date End-->
+
+  <!-- post photo -->
+  <!--<= image_tag((post.picture.url if post.picture?),-->
+                <!--:class => "img-responsive post-image") %>-->
+  <div class="post-container">
+    <!--user photo-->
+    <!-- <img src="http://placehold.it/300x300" alt="user" class="profile-photo-md pull-left" /> -->
+    <div class="post-detail">
+      <div class="user-info">
+        <h5>
+          <%= link_to post.user.full_name,user_path(post.user) %>
+        </h5>
+        <p class="text-muted"><%= time_ago_in_words(post.created_at) %> ago.</p>
+      </div>
+      <div class="reaction">
+        <a class="btn text-green"><i class="icon ion-thumbsup"></i> 13</a>
+        <a class="btn text-red"><i class="fa fa-thumbs-down"></i> 0</a>
+      </div>
+      <div class="line-divider"></div>
+      <div class="post-text">
+        <p>
+          <%= post.caption %>
+          <i class="em em-anguished"></i>
+          <i class="em em-anguished"></i>
+          <i class="em em-anguished"></i>
+        </p>
+      </div>
+      <div class="line-divider"></div>
+
+
+    </div>
+  </div>
+</div>
 

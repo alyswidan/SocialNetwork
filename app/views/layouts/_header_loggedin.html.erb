@@ -1,11 +1,27 @@
-
-
-
-<!-- Header
-================================================= -->
+<!-- Header ================================================= -->
 <header id="header">
   <nav class="navbar navbar-default navbar-fixed-top menu">
     <div class="container">
+
+      <div class="navbar-header">
+
+        <button type="button"
+                class="navbar-toggle collapsed"
+                data-toggle="collapse"
+                data-target="#bs-example-navbar-collapse-1"
+                aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+        <%= link_to signup_path, class: "navbar-brand" do %>
+          <%= image_tag "logo.png", alt: "logo"%>
+        <% end %>
+
+      </div>
+
 
 
       <!-- Collect the nav links, forms, and other content for toggling -->
@@ -20,6 +36,20 @@
           </li>
           <li class="dropdown">
             <%= link_to "Friend requests", user_path(current_user) %>
+          </li>
+
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              Account <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+              <li><%= link_to "Profile", current_user %></li>
+              <li><%= link_to "Settings", edit_user_path(current_user) %></li>
+              <li class="divider"></li>
+              <li>
+                <%= link_to "Log out", logout_path, method: "delete" %>
+              </li>
+            </ul>
           </li>
 
         </ul>
