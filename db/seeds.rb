@@ -29,15 +29,19 @@ end
                password_confirmation: password,
                birthdate: birthdate)
 end
-# postsS
-users = User.order(:created_at).take(3)
-1.times do
-  caption = Faker::Lorem.sentence(5)
-  users.each { |user| user.posts.create!(caption: caption) }
+
+# add 50 random posts to each user posts
+users = User.all
+users.each do |user|
+  50.times do |i|
+    caption = Faker::Lorem.sentence(5 + i) + user.full_name
+    user.posts.create!(caption: caption)
+  end
 end
 
+
 # Following relationships
-users = User.all
-user = users.first
+
+first_user = users.first
 buddies = users[2..50]
-buddies.each { |buddy| user.add_friend(buddy) }
+buddies.each { |buddy| first_user.add_friend(buddy) }

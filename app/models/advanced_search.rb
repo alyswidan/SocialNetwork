@@ -26,7 +26,7 @@ class AdvancedSearch
     if caption.blank?
       User.where(conditions)
     else
-      User.joins(:posts).where(conditions)
+      User.joins(:posts).where(conditions).distinct
     end
 
   end
