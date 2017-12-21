@@ -1,3 +1,5 @@
+
+
 <div class="post-content">
 
   <!--Post Date-->
@@ -7,11 +9,14 @@
   </div><!--Post Date End-->
 
   <!-- post photo -->
-  <!--<= image_tag((post.picture.url if post.picture?),-->
-                <!--:class => "img-responsive post-image") %>-->
+  <img src="<%= post.picture.url unless post.picture.blank?%>"
+       class="img-responsive post-image" >
+
   <div class="post-container">
     <!--user photo-->
-    <!-- <img src="http://placehold.it/300x300" alt="user" class="profile-photo-md pull-left" /> -->
+    <img src="<%= post.user.picture.url unless post.user.picture.blank?%>"
+         class="img-responsive post-image" >
+
     <div class="post-detail">
       <div class="user-info">
         <h5>

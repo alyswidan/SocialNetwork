@@ -10,8 +10,9 @@
       <div class="row">
         <div class="col-md-3">
           <div class="profile-info">
-            <%= image_tag((@user.picture if @user.picture?),
-                          :class => "img-responsive profile-photo") %>
+
+            <img src="<%= @user.picture.url unless @user.picture.blank?%>"
+                 class="img-responsive post-image" >
 
             <h3><%= @user.full_name %></h3>
             <p class="text-muted"><%= @user.nickname %></p>
@@ -27,7 +28,6 @@
 
           </ul>
           <ul class="follow-me list-inline">
-            <li>1,299 people following her</li>
             <li><button class="btn-primary">Add Friend</button></li>
           </ul>
         </div>
@@ -44,27 +44,8 @@
 
         <!-- Post Create Box
         ================================================= -->
-        <div class="create-post">
-          <div class="row">
-            <div class="col-md-7 col-sm-7">
-              <div class="form-group">
-                <img src="http://placehold.it/300x300" alt="" class="profile-photo-md" />
-                <textarea name="texts" id="exampleTextarea" cols="30" rows="1" class="form-control" placeholder="Write what you wish"></textarea>
-              </div>
-            </div>
-            <div class="col-md-5 col-sm-5">
-              <div class="tools">
-                <ul class="publishing-tools list-inline">
-                  <li><a href="#"><i class="ion-compose"></i></a></li>
-                  <li><a href="#"><i class="ion-images"></i></a></li>
-                  <li><a href="#"><i class="ion-ios-videocam"></i></a></li>
-                  <li><a href="#"><i class="ion-map"></i></a></li>
-                </ul>
-                <button class="btn btn-primary pull-right">Publish</button>
-              </div>
-            </div>
-          </div>
-        </div><!-- Post Create Box End-->
+        <%= render 'shared/post_form' %>
+        <!-- Post Create Box End-->
 
 
         <% if @user.posts.any? %>

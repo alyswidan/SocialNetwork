@@ -64,4 +64,13 @@ class PictureUploader < CarrierWave::Uploader::Base
   #   "something.jpg" if original_filename
   # end
 
+  def default_url
+=begin
+    ActionController::Base
+        .helpers.asset_path('fallback/' + [version_name, 'my_fallback.jpg']
+                                              .compact.join('_'))
+=end
+
+    'http://placehold.it/300x300'
+  end
 end
