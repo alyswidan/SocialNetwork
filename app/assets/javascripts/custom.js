@@ -8,3 +8,7 @@ $('#post_picture').bind('change', function() {
         alert('Maximum file size is 5MB. Please choose a smaller file.');
     }
 });
+
+
+console.log('dasdas');
+$('select').addClass('dropdown');

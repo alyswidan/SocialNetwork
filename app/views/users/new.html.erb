@@ -27,31 +27,47 @@
                 <div class="row">
                   <div class="form-group col-xs-6">
                     <%= f.label :first_name, class:'sr-only'%>
-                    <%= f.text_field :first_name, class:'form-control input-group-lg'%>
+                    <%= f.text_field :first_name,
+                                     class:'form-control input-group-lg',
+                                     placeholder:'First Name'%>
                   </div>
                   <div class="form-group col-xs-6">
                     <%= f.label :last_name, class:'sr-only'%>
-                    <%= f.text_field :last_name, class:'form-control input-group-lg', html: { placeholder:'Last Name' }%>
+                    <%= f.text_field :last_name,
+                                     class:'form-control input-group-lg',
+                                     placeholder:'Last Name'%>
                   </div>
                 </div>
                 <div class="row">
                   <div class="form-group col-xs-12">
                     <%= f.label :email, class:'sr-only'%>
-                    <%= f.text_field :email, class:'form-control input-group-lg'%>
+                    <%= f.text_field :email,
+                                     class:'form-control input-group-lg',
+                                     placeholder:'Email'%>
                   </div>
                 </div>
                 <div class="row">
                   <div class="form-group col-xs-6">
                     <%= f.label :password, class:'sr-only'%>
-                    <%= f.text_field :password, class:'form-control input-group-lg'%>
+                    <%= f.text_field :password,
+                                     class:'form-control input-group-lg',
+                                     placeholder:'Password'%>
                   </div>
                   <div class="form-group col-xs-6">
                     <%= f.label :password_confirmation, class:'sr-only'%>
-                    <%= f.text_field :password_confirmation, class:'form-control input-group-lg'%>
+                    <%= f.text_field :password_confirmation,
+                                     class:'form-control input-group-lg',
+                                     placeholder:'Confirm Password'%>
                   </div>
                 </div>
                 <div class="row">
-                  <p class="birth"><strong>Date of Birth</strong></p>
+
+                  <div class="form-group col-xs-12">
+                    <%= f.label :birthdate %>
+                    <%= f.date_select :birthdate,
+                                         class: 'dropdown' %>
+                  </div>
+                  <!--<p class="birth"><strong>Date of Birth</strong></p>
                   <div class="form-group col-sm-3 col-xs-6">
                     <label for="month" class="sr-only"></label>
                     <select class="form-control" id="day">
@@ -73,7 +89,7 @@
                       <option value="year" disabled selected>Year</option>
                       <option>2000</option>
                     </select>
-                  </div>
+                  </div>-->
                 </div>
                 <div class="form-group gender">
                   <label class="radio-inline">
