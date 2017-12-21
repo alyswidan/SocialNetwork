@@ -16,9 +16,6 @@ class AdvancedSearch
     false
   end
 
-
-
-
   private
 
   def find_results
