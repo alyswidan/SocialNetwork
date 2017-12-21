@@ -1,3 +1,12 @@
-<h1><%= current_user.full_name %></h1>
-<span><%= link_to "view my profile", current_user %></span>
-<span><%= pluralize(current_user.posts.count, "post") %></span>
+<div class="profile-card">
+  <img src="http://placehold.it/300x300" alt="user" class="profile-photo" />
+
+  <h5>
+    <%= link_to current_user.full_name, user_path(current_user), class: "text-white"%>
+  </h5>
+
+  <a href="#" class="text-white">
+    <i class="ion ion-android-person-add"></i>
+    <%= pluralize(current_user.posts.count, "post") %>
+  </a>
+</div>

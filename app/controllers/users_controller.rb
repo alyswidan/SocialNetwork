@@ -17,6 +17,8 @@ class UsersController < ApplicationController
     # debugger
     page = params[:page] || 1
     @posts = @user.posts.order(created_at: :desc).paginate(page:page)
+    # for create new post form
+    @post = helpers.current_user.posts.build if helpers.logged_in?
   end
 
   # GET /users/new

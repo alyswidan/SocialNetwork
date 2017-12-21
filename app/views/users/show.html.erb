@@ -44,7 +44,9 @@
 
         <!-- Post Create Box
         ================================================= -->
-        <%= render 'shared/post_form' %>
+        <% if @user == current_user %>
+          <%= render 'shared/post_form' %>
+        <% end %>
         <!-- Post Create Box End-->
 
 
