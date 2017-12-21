@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  
   get 'sessions/new'
 
   get 'users/new'
@@ -13,6 +14,9 @@ Rails.application.routes.draw do
   get    'login'  => 'sessions#new'
   post   'login'  => 'sessions#create'
   delete 'logout' => 'sessions#destroy'
+  get 'advanced_search' => 'advanced_searches#new'
+  post 'advanced_search' => 'advanced_searches#create'
+  get 'advanced_search/results' => 'advanced_searches#results'
   resources :users
-  resources :posts,      only: [:create, :destroy]
+  resources :posts, only: %i[create destroy]
 end
