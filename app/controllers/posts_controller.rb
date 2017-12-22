@@ -29,7 +29,10 @@ class PostsController < ApplicationController
     @post = helpers.current_user.posts.build(post_params)
     if @post.save
       flash[:success] = "post created!"
-      redirect_to root_url
+      respond_to do |f|
+          f.html{redirect_to root_url}
+          f.js
+      end
     else
       @feed_items = []
       render 'static_pages/home'

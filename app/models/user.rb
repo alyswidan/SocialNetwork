@@ -49,9 +49,9 @@ class User < ApplicationRecord
       query2=Post.where("user_id IN (#{friend_ids})
 OR user_id = :user_id and is_public=false", user_id: id)
       Post.from("(#{query1.to_sql} Union #{query2.to_sql}) AS Posts")
-          .order(created_at: :desc)
+          .order(created_at: :DESC)
     else
-      Post.where(is_public: true)
+      Post.where(is_public: true).order(created_at: :DESC)
     end
 
 
