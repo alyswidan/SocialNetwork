@@ -8,6 +8,11 @@ class UsersController < ApplicationController
   # GET /users.json
   def index
     @users = User.all
+    if params[:search]
+      @users = User.search(params[:search]).order("first_name DESC")
+    else
+      @users = User.all.order("first_name DESC")
+    end
   end
 
   # GET /users/1

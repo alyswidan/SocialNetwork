@@ -21,11 +21,10 @@ class User < ApplicationRecord
   validates :first_name, presence: true
   validates :last_name, presence: true
   validates :birthdate, presence: true
-
+  validates :password, length: { minimum: 5},allow_blank: true
   mount_uploader :picture, PictureUploader
   validate :picture_size
   validates :password, length: { minimum: 5}, allow_blank: true
-
 
   def buddies
     option1 = User.
@@ -98,6 +97,10 @@ OR user_id = :user_id and is_public=false", user_id: id)
     if picture.size > 5.megabytes
       errors.add(:picture, 'should be less than 5MB')
     end
+  end
+
+  def self.search(search)
+    where("first_name LIKE ? OR last_name LIKE ?","%#{search}%", "%#{search}%")
   end
 
 end
