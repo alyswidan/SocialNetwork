@@ -33,8 +33,8 @@ users = User.order(:created_at).take(3)
 end
 
 # Following relationships
-users = User.all
-user = users.first
-buddies = users[2..50]
-buddies.each { |buddy| user.send_request(buddy) }
 
+# users = User.all
+# user = users.first
+# buddies = users[2..50]
+# buddies.each { |buddy| user.send_request(buddy) }

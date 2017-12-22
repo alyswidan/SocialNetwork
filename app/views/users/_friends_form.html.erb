@@ -3,7 +3,13 @@
 <% if current_user.is_friends_with?(@user) %>
       <%= render 'unfriend' %>
     <% else %>
+      <% if current_user.is_send_request?(@user) %>
+        <%= render 'pendding' %>
+        <% elif current_user.is_receive_request?(@user)%>
+        <%= render 'respond' %>
+        <% else %>
       <%= render 'friend' %>
+        <% end%>
     <% end %>
   </div>
 <% end %>

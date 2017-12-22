@@ -58,8 +58,8 @@ class User < ApplicationRecord
   def add_friend(other_user)
     friends.create(other_user_id: other_user.id)
   end
-  def send_request(other_user)
-    sent_requests.create(other_user_id: other_user.id)
+  def send_request(other_user_id)
+    sent_requests.create(other_user_id: other_user_id)
   end
   def accept_request(friend_request)
     if friend_request.other_user.id == self.id
@@ -84,6 +84,14 @@ class User < ApplicationRecord
  || !Friend.where(other_user_id: self.id, user_id: other_user.id).empty?
 
   end
+
+  def is_send_request?(other_user)
+    !sent_requests.where(other_user_id: other_user.id, user_id: self.id).empty?
+  end
+  def is_receive_request?(other_user)
+    !received_requests.where(other_user_id:self.id , user_id:other_user.id).empty?
+  end
+
   def index
     @users = User.paginate(page: params[:page])
   end
