@@ -21,6 +21,20 @@ User.create!(first_name: "Zeina",
              password_confirmation: "zeinanada",
              birthdate: 22.years.ago,
              admin:true)
+
+
+10.times do |n|
+User.create!(first_name: "Example#{n}",
+             last_name: 'User',
+             email: "user#{n}@railstutorial.org",
+             nickname: "hamada #{n + 1}#{n + 2}#{n + 3}",
+             about_me: Faker::Lorem.sentence(n+5),
+             password: 'password',
+             password_confirmation: 'password',
+             birthdate: ((n + 1) * 10).years.ago,
+             admin: true,
+             gender: :male)
+end
 99.times do |n|
   name = Faker::Name.name
   email = "example-#{n+1}@railstutorial.org"
@@ -38,6 +52,22 @@ users = User.order(:created_at).take(3)
 50.times do
   caption = Faker::Lorem.sentence(5)
   users.each { |user| user.posts.create!(caption: caption) }
+  City.create!(name: Faker::Address.city)
+end
+
+users.each do |user|
+  user.city = City.find(Faker::Number.between(1, 49))
+  user.save!
+end
+
+
+# add 50 random posts to each user posts
+
+users.each do |user|
+  2.times do |i|
+    caption = Faker::Lorem.sentence(5 + i) + user.full_name
+    user.posts.create!(caption: caption)
+  end
 end
 
 # Following relationships
