@@ -1,4 +1,5 @@
 class AdvancedSearchesController < ApplicationController
+  before_action :logged_in_user
 
   def results
     params[:advanced_search] = session[:advanced_search]
@@ -29,4 +30,13 @@ class AdvancedSearchesController < ApplicationController
                                             :last_name, :email,
                                             :city, :caption)
   end
+
+  def logged_in_user
+    unless helpers.logged_in?
+      #helpers.store_location
+      flash[:danger] = "please log in"
+      redirect_to login_url
+    end
+  end
+
 end
