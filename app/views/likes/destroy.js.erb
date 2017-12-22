@@ -1,0 +1,2 @@
+$('#post-<%= @post.id.to_s %> .likes')
+    .html("<%= escape_javascript(render('posts/like', post: @post)) %>")

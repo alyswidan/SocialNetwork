@@ -2,14 +2,22 @@ class LikesController < ApplicationController
 
 
   def create
-
-     helpers.current_user.like(params[:post_id])
+    @post = Post.find(params[:post_id])
+     helpers.current_user.like(@post.id)
+     respond_to do |format|
+       format.html { redirect_to current_user }
+       format.js
+     end
 
   end
 
   def destroy
-    helpers.current_user.unlike(params[:post_id])
-
+    @post = Post.find(params[:post_id])
+    helpers.current_user.unlike(@post.id)
+    respond_to do |format|
+      format.html { redirect_to current_user }
+      format.js
+    end
   end
   #
   # private
