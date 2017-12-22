@@ -29,11 +29,12 @@ class User < ApplicationRecord
   end
   #unlike a post
   def unlike(post_id)
+
     likes.find_by(post_id: post_id).destroy
   end
-  def likes?(post)
+  def likes?(post_id)
 
-      likes.find_by(post_id: post.id).present?
+      likes.find_by(post_id: post_id).present?
 
   end
 
@@ -59,7 +60,7 @@ class User < ApplicationRecord
 OR user_id = :user_id and is_public=false", user_id: id)
       Post.from("(#{query1.to_sql} Union #{query2.to_sql}) AS Posts").order(created_at: :desc)
     else
-      Post.where(:is_public => true)
+      Post.where(:is_public => true).order(created_at: :desc)
     end
 
 

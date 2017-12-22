@@ -5,13 +5,11 @@ class LikesController < ApplicationController
 
      helpers.current_user.like(params[:post_id])
 
-
-
   end
 
   def destroy
-    post.likes.where(user: current_user).destroy_all
-    redirect_to user, :notice => 'Unliked!'
+    helpers.current_user.unlike(params[:post_id])
+
   end
   #
   # private
