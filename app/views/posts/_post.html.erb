@@ -7,15 +7,9 @@
   <span class="timestamp">
 Posted <%= time_ago_in_words(post.created_at) %> ago.
 </span>
-  <% unless current_user?(@user) %>
-    <div id="like_form">
-      <% if current_user.likes?(@user) %>
-        <%= render 'unlike' %>
-      <% else %>
-        <%= render 'like' %>
-      <% end %>
-    </div>
-  <% end %>
+  <div class="likes">
+    <%= render 'shared/like_form', post: post %>
+  </div>
 
 </li>
 

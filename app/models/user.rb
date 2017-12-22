@@ -24,16 +24,17 @@ class User < ApplicationRecord
   validates :birthdate, presence: true
   validates :password, length: { minimum: 5},allow_blank: true
 
-  #like a post
-  def like(post)
-    likes.create(post_id: post.id)
-    end
-    #unlike a post
-    def unlike(post)
-      likes.find_by(post_id: post.id).destroy
-    end
+  def like(post_id)
+    likes.create(post_id: post_id)
+  end
+  #unlike a post
+  def unlike(post_id)
+    likes.find_by(post_id: post_id).destroy
+  end
   def likes?(post)
-    likes.find_by(post_id: post.id).any?
+
+      likes.find_by(post_id: post.id).present?
+
   end
 
   def buddies
