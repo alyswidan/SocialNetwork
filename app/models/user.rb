@@ -55,19 +55,25 @@ class User < ApplicationRecord
   def full_name
     "#{first_name} #{last_name}"
   end
-  def add_friend(other_user)
-    friends.create(other_user_id: other_user.id)
-  end
+
   def send_request(other_user_id)
     sent_requests.create(other_user_id: other_user_id)
   end
+
+  def remove_request(other_user_id)
+
+    sent_requests.find(other_user_id:  other_user_id).destroy
+  end
+
   def accept_request(friend_request)
-    if friend_request.other_user.id == self.id
+    if friend_request.other_user_id == self.id
       add_friend(friend_request.user)
       friend_request.destroy
     end
   end
-
+  def add_friend(other_user)
+    friends.create(other_user_id: other_user.id)
+  end
 
   def remove_friend(other_user)
     me_on_left = friends.find_by(other_user_id: other_user.id)

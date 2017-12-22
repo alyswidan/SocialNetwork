@@ -5,7 +5,7 @@
     <% else %>
       <% if current_user.is_send_request?(@user) %>
         <%= render 'pendding' %>
-        <% elif current_user.is_receive_request?(@user)%>
+        <% elsif current_user.is_receive_request?(@user)%>
         <%= render 'respond' %>
         <% else %>
       <%= render 'friend' %>
