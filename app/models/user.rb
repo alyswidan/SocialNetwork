@@ -17,7 +17,9 @@ class User < ApplicationRecord
   validates :email, presence: true, length: { maximum: 255 },
                     format: { with: VALID_EMAIL_REGEX },
                     uniqueness: true
-  before_save { self.email = email.downcase }
+  before_save {self.email = email.downcase }
+  before_save {self.first_name = first_name.downcase}
+  before_save {self.last_name = last_name.downcase}
   validates :first_name, presence: true
   validates :last_name, presence: true
   validates :birthdate, presence: true
@@ -66,7 +68,7 @@ OR user_id = :user_id and is_public=false", user_id: id)
 
   end
   def full_name
-    "#{first_name} #{last_name}"
+    "#{first_name.capitalize} #{last_name.capitalize}"
   end
   def add_friend(other_user)
     friends.create(other_user_id: other_user.id)
@@ -99,8 +101,5 @@ OR user_id = :user_id and is_public=false", user_id: id)
     end
   end
 
-  def self.search(search)
-    where("first_name LIKE ? OR last_name LIKE ?","%#{search}%", "%#{search}%")
-  end
 
 end

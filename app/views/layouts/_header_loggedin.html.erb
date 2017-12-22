@@ -54,14 +54,24 @@
 
         </ul>
 
-        <%= form_for current_user, html:{class:'navbar-form navbar-right hidden-sm'}  do |f| %>
-          <div class="form-group">
-            <%= form_tag users_path, :method => 'get' do%>
-              <%= f.text_field :search, class:'form-control',
-                               placeholder: "Search names"%>
-              <%= submit_tag "Search", :name => nil %>
-            <% end %>
+
+
+
+        <%= form_for :advanced_search,
+                     url: advanced_search_path,
+                     html:{class:"navbar-form navbar-right hidden-sm"} do |f| %>
+
+
+          <div class="input-group">
+            <%= f.text_field :simple,
+                             class: 'form-control',
+                             placeholder:"Search friends" %>
+            <span class="input-group-btn">
+              <%= f.submit "Search", class: "btn btn-primary" %>
+            </span>
           </div>
+
+
         <% end %>
 
 

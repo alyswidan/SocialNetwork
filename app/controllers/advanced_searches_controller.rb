@@ -25,7 +25,7 @@ class AdvancedSearchesController < ApplicationController
 
   # Never trust parameters from the scary internet, only allow the white list through.
   def advanced_search_params
-    params.require(:advanced_search).permit(:first_name,
+    params.require(:advanced_search).permit(:first_name,:simple,
                                             :last_name, :email,
                                             :city, :caption)
   end

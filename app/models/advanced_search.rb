@@ -1,7 +1,7 @@
 class AdvancedSearch
   extend ActiveModel::Naming
   include ActiveModel::Model
-  attr_accessor :first_name, :last_name, :email, :city, :caption
+  attr_accessor :first_name, :last_name, :email, :city, :caption, :simple
 
   def results
     @results ||= find_results
@@ -20,9 +20,18 @@ class AdvancedSearch
 
   def find_results
     user = User
-    user = user.joins(:posts) unless caption.blank?
-    user = user.joins(:city) unless city.blank?
-    user.where(conditions).distinct
+    instance_variables.each(&:downcase)
+
+    if simple.blank?
+      user = user.joins(:posts) unless caption.blank?
+      user = user.joins(:city) unless city.blank?
+      user.where(conditions).distinct
+    else
+      user.where(conditions_simple).distinct
+    end
+
+
+
   end
 
   def first_name_conditions
@@ -47,6 +56,10 @@ class AdvancedSearch
 
   def conditions
     [conditions_clauses.join(' AND '), *conditions_options]
+  end
+
+  def conditions_simple
+    ['first_name like ? or last_name like ?',"%#{simple}%","%#{simple}%"]
   end
 
   def conditions_clauses
