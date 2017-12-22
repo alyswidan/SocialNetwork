@@ -6,6 +6,10 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+
+
+
+
 10.times do |n|
 User.create!(first_name: "Example#{n}",
              last_name: 'User',
@@ -15,23 +19,36 @@ User.create!(first_name: "Example#{n}",
              password: 'password',
              password_confirmation: 'password',
              birthdate: ((n + 1) * 10).years.ago,
-             admin:true)
+             admin: true)
 end
 99.times do |n|
-  name = Faker::Name.name
-  email = "example-#{n + 1}@railstutorial.org"
-  password = 'passwordpassword'
+  first_name = Faker::Name.first_name
+  last_name = Faker::Name.last_name
+  email = Faker::Internet.email
+  password = 'password'
   birthdate = 2.days.ago
-  User.create!(first_name: name.split(' ')[0],
-               last_name: name.split(' ')[1],
+  User.create!(first_name: first_name,
+               last_name: last_name,
                email: email,
                password: password,
                password_confirmation: password,
                birthdate: birthdate)
 end
 
-# add 50 random posts to each user posts
 users = User.all
+
+50.times do
+  City.create!(name: Faker::Address.city)
+end
+
+users.each do |user|
+  user.city = City.find(Faker::Number.between(1, 49))
+  user.save!
+end
+
+
+# add 50 random posts to each user posts
+
 users.each do |user|
   50.times do |i|
     caption = Faker::Lorem.sentence(5 + i) + user.full_name

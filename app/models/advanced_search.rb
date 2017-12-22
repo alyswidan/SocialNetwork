@@ -1,7 +1,7 @@
 class AdvancedSearch
   extend ActiveModel::Naming
   include ActiveModel::Model
-  attr_accessor :first_name, :last_name, :email, :hometown, :caption
+  attr_accessor :first_name, :last_name, :email, :city, :caption
 
   def results
     @results ||= find_results
@@ -22,13 +22,10 @@ class AdvancedSearch
   private
 
   def find_results
-
-    if caption.blank?
-      User.where(conditions)
-    else
-      User.joins(:posts).where(conditions).distinct
-    end
-
+    user = User
+    user = user.joins(:posts) unless caption.blank?
+    user = user.joins(:city) unless city.blank?
+    user.where(conditions).distinct
   end
 
   def first_name_conditions
@@ -45,6 +42,10 @@ class AdvancedSearch
 
   def caption_conditions
     ['caption LIKE ?', "%#{caption}%"] unless caption.blank?
+  end
+
+  def city_conditions
+    ['cities.name LIKE ?', "%#{city}%"] unless city.blank?
   end
 
   def conditions

@@ -1,14 +1,14 @@
 class User < ApplicationRecord
-  enum marital_status: [:single, :married, :divorced, :engaged]
-  enum  gender: [:male, :female, :not_specified]
-  has_many :posts,dependent: :destroy
+  enum marital_status: %i[single married divorced engaged]
+  enum gender: %i[male female not_specified]
+  has_many :posts, dependent: :destroy
   has_many :phones
-  has_one :city
+  belongs_to :city, optional: true
   has_many :friend_requests
   has_many :friends
 
   has_many :sent_requests, through: :friend_requests, source: :other_user
-  has_many :received_requests, through: :friend_requests,source: :user
+  has_many :received_requests, through: :friend_requests, source: :user
 
   has_many(:buddies, through: :friends, source: :other_user)
   has_secure_password
@@ -24,7 +24,7 @@ class User < ApplicationRecord
 
   mount_uploader :picture, PictureUploader
   validate :picture_size
-  validates :password, length: { minimum: 5},allow_blank: true
+  validates :password, length: { minimum: 5}, allow_blank: true
 
 
   def buddies
@@ -43,7 +43,7 @@ class User < ApplicationRecord
 
   def feed
     query1= Post.where(is_public: true)
-    friend_ids = buddies.ids.join(",")
+    friend_ids = buddies.ids.join(',')
     if friend_ids.present?
       query2=Post.where("user_id IN (#{friend_ids})
 OR user_id = :user_id and is_public=false", user_id: id)
@@ -60,7 +60,7 @@ OR user_id = :user_id and is_public=false", user_id: id)
   def birthdate=(date)
 
     if date.class == String && !date.empty?
-      super Date.strptime date, "%m/%d/%Y"
+      super Date.strptime date, '%m/%d/%Y'
     else
       super
     end
@@ -96,7 +96,7 @@ OR user_id = :user_id and is_public=false", user_id: id)
   # Validates the size of an uploaded picture.
   def picture_size
     if picture.size > 5.megabytes
-      errors.add(:picture, "should be less than 5MB")
+      errors.add(:picture, 'should be less than 5MB')
     end
   end
 
