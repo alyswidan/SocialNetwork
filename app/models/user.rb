@@ -56,7 +56,6 @@ class User < ApplicationRecord
   end
 
   def avatar
-    debugger
     picture.url unless picture.url.blank?
     if gender == 'male'
       ActionController::Base.helpers.asset_path('male_placeholder.png', digest: false)
