@@ -55,7 +55,9 @@ class AdvancedSearch
   end
 
   def conditions
-    [conditions_clauses.join(' AND '), *conditions_options]
+    x = conditions_clauses
+    x.push true
+    [x.join(' AND '), *conditions_options]
   end
 
   def conditions_simple
