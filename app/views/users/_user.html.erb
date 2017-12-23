@@ -16,7 +16,7 @@
   <p> <%= user.nickname %></p>
   <p> <%= user.about_me %></p>
 
-  <% if (not current_user.is_friends_with? user) && (user != current_user) %>
-  <button class="btn-primary">Add Friend</button>
-  <%end%>
+ <!-- < if (not current_user.is_friends_with? user) && (user != current_user) %>
+    <= render ('users/friends_form') if logged_in? %>
+  <end%>-->
 </div>
