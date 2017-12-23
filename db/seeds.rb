@@ -42,14 +42,11 @@ end
 end
 
 
+
+users = User.all
+
 50.times do
   City.create!(name: Faker::Address.city)
-end
-# postsS
-users = User.order(:created_at).take(7)
-5.times do
-  caption = Faker::Lorem.sentence(5)
-  users.each { |user| user.posts.create!(caption: caption) }
 end
 
 users.each do |user|
@@ -79,3 +76,5 @@ buddies.each { |buddy| first_user.add_friend(buddy) }
 posts = Post.all
 first_post = posts.first
 users.each { |user| user.like(first_post) }
+
+

@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="7e5c4042-a33e-454d-b218-17eb0b73582b" name="Default" comment="">
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    <list default="true" id="7e5c4042-a33e-454d-b218-17eb0b73582b" name="Default" comment="" />
+=======
+    <list default="true" id="7e5c4042-a33e-454d-b218-17eb0b73582b" name="Default" comment="">
+>>>>>>> Post_Likes
 <<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/app/controllers/advanced_searches_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/advanced_searches_controller.rb" />
@@ -23,6 +30,7 @@
       <change beforePath="$PROJECT_DIR$/app/views/layouts/_header_loggedin.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/_header_loggedin.html.erb" />
       <change beforePath="$PROJECT_DIR$/app/views/users/index.html.erb" afterPath="$PROJECT_DIR$/app/views/users/index.html.erb" />
 >>>>>>> 58688b965568083880a109b1075ae16e57e5233c
+<<<<<<< HEAD
 =======
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/app/models/like.rb" afterPath="$PROJECT_DIR$/app/models/like.rb" />
@@ -33,7 +41,10 @@
       <change beforePath="$PROJECT_DIR$/app/views/shared/_feed.html.erb" afterPath="$PROJECT_DIR$/app/views/shared/_feed.html.erb" />
       <change beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
 >>>>>>> Post_Likes
+=======
+>>>>>>> Post_Likes
     </list>
+>>>>>>> master
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
     <ignored path="$PROJECT_DIR$/public/system/" />
@@ -60,8 +71,11 @@
     <option name="SHOW_EMPTY_GROUPS" value="false" />
     <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
 <<<<<<< HEAD
+<<<<<<< HEAD
     <expand />
 =======
+=======
+>>>>>>> Post_Likes
     <expand>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
@@ -103,11 +117,18 @@
         <item name="likes: table" type="a93d6ac6:PostgresImplModel$LocalTable" />
       </path>
     </expand>
+<<<<<<< HEAD
+>>>>>>> Post_Likes
+=======
+=======
+    <expand />
+>>>>>>> master
 >>>>>>> Post_Likes
     <select />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       <file leaf-file-name="new.html.erb" pinned="false" current-in-tab="false">
@@ -125,19 +146,83 @@
 =======
       <file leaf-file-name="user.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+=======
+      <file leaf-file-name="create.js.erb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/likes/create.js.erb">
+>>>>>>> Post_Likes
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-200">
-              <caret line="30" column="21" lean-forward="false" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
+            <state relative-caret-position="18">
+              <caret line="1" column="38" lean-forward="false" selection-start-line="1" selection-start-column="38" selection-end-line="1" selection-end-column="38" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_feed.html.erb" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/shared/_feed.html.erb">
+      <file leaf-file-name="_like.html.erb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/posts/_like.html.erb">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="69" lean-forward="false" selection-start-line="0" selection-start-column="69" selection-end-line="0" selection-end-column="69" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="likes_controller.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/likes_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="203">
+              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="like.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/like.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="destroy.js.erb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/likes/destroy.js.erb">
+          <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="36">
               <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+>>>>>>> Post_Likes
+=======
+            <state relative-caret-position="18">
+              <caret line="1" column="47" lean-forward="false" selection-start-line="1" selection-start-column="47" selection-end-line="1" selection-end-column="47" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_unlike.html.erb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/posts/_unlike.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="18">
+              <caret line="1" column="40" lean-forward="false" selection-start-line="1" selection-start-column="40" selection-end-line="1" selection-end-column="40" />
+=======
+<<<<<<< HEAD
+      <file leaf-file-name="new.html.erb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/advanced_searches/new.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="4" column="52" lean-forward="false" selection-start-line="4" selection-start-column="52" selection-end-line="4" selection-end-column="52" />
+=======
+      <file leaf-file-name="_header_loggedin.html.erb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/_header_loggedin.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="59" column="27" lean-forward="true" selection-start-line="59" selection-start-column="27" selection-end-line="59" selection-end-column="27" />
+>>>>>>> 58688b965568083880a109b1075ae16e57e5233c
+>>>>>>> master
 >>>>>>> Post_Likes
               <folding />
             </state>
@@ -146,11 +231,19 @@
       </file>
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> Post_Likes
+<<<<<<< HEAD
       <file leaf-file-name="user.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/user.rb">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+            <state relative-caret-position="-8">
+              <caret line="54" column="10" lean-forward="false" selection-start-line="54" selection-start-column="10" selection-end-line="54" selection-end-column="10" />
+=======
             <state relative-caret-position="18">
               <caret line="45" column="36" lean-forward="false" selection-start-line="45" selection-start-column="36" selection-end-line="45" selection-end-column="36" />
+<<<<<<< HEAD
 =======
       <file leaf-file-name="_like.html.erb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/posts/_like.html.erb">
@@ -158,17 +251,30 @@
             <state relative-caret-position="72">
               <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
 >>>>>>> Post_Likes
+=======
+>>>>>>> master
+>>>>>>> Post_Likes
               <folding />
             </state>
           </provider>
         </entry>
       </file>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+      <file leaf-file-name="routes.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/routes.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="295">
+              <caret line="20" column="20" lean-forward="false" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+=======
+>>>>>>> Post_Likes
       <file leaf-file-name="advanced_searches_controller.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/advanced_searches_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
               <caret line="15" column="27" lean-forward="true" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+<<<<<<< HEAD
 =======
       <file leaf-file-name="_unlike.html.erb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/posts/_unlike.html.erb">
@@ -176,11 +282,21 @@
             <state relative-caret-position="0">
               <caret line="0" column="49" lean-forward="false" selection-start-line="0" selection-start-column="49" selection-end-line="0" selection-end-column="49" />
 >>>>>>> Post_Likes
+=======
+>>>>>>> master
+>>>>>>> Post_Likes
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
+      <file leaf-file-name="_feed.html.erb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/shared/_feed.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="6" column="9" lean-forward="false" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+=======
       <file leaf-file-name="routes.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/routes.rb">
           <provider selected="true" editor-type-id="text-editor">
@@ -193,46 +309,7 @@
             <state relative-caret-position="480">
               <caret line="44" column="62" lean-forward="false" selection-start-line="44" selection-start-column="62" selection-end-line="44" selection-end-column="62" />
 >>>>>>> 58688b965568083880a109b1075ae16e57e5233c
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_post.html.erb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/posts/_post.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="10" column="45" lean-forward="false" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="45" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="home.html.erb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/static_pages/home.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="14" column="8" lean-forward="false" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_post_form.html.erb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/shared/_post_form.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="6" column="51" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="51" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_user_info.html.erb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/shared/_user_info.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+>>>>>>> master
               <folding />
             </state>
           </provider>
@@ -253,16 +330,27 @@
   </component>
   <component name="FindInProjectRecents">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <findStrings>
       <find>sear</find>
     </findStrings>
 =======
+=======
+>>>>>>> Post_Likes
     <replaceStrings>
       <replace />
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/app/views/posts</dir>
     </dirStrings>
+<<<<<<< HEAD
+>>>>>>> Post_Likes
+=======
+=======
+    <findStrings>
+      <find>sear</find>
+    </findStrings>
+>>>>>>> master
 >>>>>>> Post_Likes
   </component>
   <component name="Git.Settings">
@@ -276,10 +364,14 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+<<<<<<< HEAD
+        <option value="$PROJECT_DIR$/app/controllers/sessions_controller.rb" />
+=======
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
         <option value="$PROJECT_DIR$/db/migrate/20171212182542_create_friend_requests.rb" />
         <option value="$PROJECT_DIR$/app/views/sessions/new.html.erb" />
         <option value="$PROJECT_DIR$/app/helpers/sessions_helper.rb" />
+>>>>>>> master
         <option value="$PROJECT_DIR$/app/views/layouts/_header.html.erb" />
         <option value="$PROJECT_DIR$/db/migrate/20171217112321_add_index_to_posts.rb" />
         <option value="$PROJECT_DIR$/test/fixtures/friend_requests.yml" />
@@ -299,6 +391,37 @@
         <option value="$PROJECT_DIR$/app/views/shared/_error_messages.html.erb" />
         <option value="$PROJECT_DIR$/test/models/user_test.rb" />
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+        <option value="$PROJECT_DIR$/app/controllers/static_pages_controller.rb" />
+        <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/app/uploaders/picture_uploader.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/posts_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/shared/_post_form.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/static_pages/home.html.erb" />
+        <option value="$PROJECT_DIR$/db/seeds.rb" />
+        <option value="$PROJECT_DIR$/app/views/shared/_stats.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/posts/_like_form.erb" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/330d2ed6-6a92-489e-8c26-957127af0eda/console.sql" />
+        <option value="$PROJECT_DIR$/app/models/post.rb" />
+        <option value="$PROJECT_DIR$/app/models/like.rb" />
+        <option value="$PROJECT_DIR$/app/views/posts/_like_form.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/shared/_feed.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/posts/_post.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/shared/_like_form.html.erb" />
+        <option value="$PROJECT_DIR$/config/application.rb" />
+        <option value="$PROJECT_DIR$/app/models/user.rb" />
+        <option value="$PROJECT_DIR$/app/views/posts/_like.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/posts/_unlike.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/posts/create.js.erb" />
+        <option value="$PROJECT_DIR$/app/views/posts/destroy.js.erb" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/app/views/likes/create.js.erb" />
+        <option value="$PROJECT_DIR$/app/views/likes/destroy.js.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/likes_controller.rb" />
+=======
+>>>>>>> Post_Likes
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/330d2ed6-6a92-489e-8c26-957127af0eda/console.sql" />
         <option value="$PROJECT_DIR$/app/views/shared/_feed.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/static_pages_controller.rb" />
@@ -343,6 +466,7 @@
         <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/users/index.html.erb" />
 >>>>>>> 58688b965568083880a109b1075ae16e57e5233c
+<<<<<<< HEAD
 =======
         <option value="$PROJECT_DIR$/app/controllers/static_pages_controller.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
@@ -367,6 +491,9 @@
         <option value="$PROJECT_DIR$/app/views/posts/_unlike.html.erb" />
         <option value="$PROJECT_DIR$/app/views/shared/_like_form.html.erb" />
 >>>>>>> Post_Likes
+=======
+>>>>>>> master
+>>>>>>> Post_Likes
       </list>
     </option>
   </component>
@@ -376,7 +503,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="75" />
     <option name="y" value="16" />
     <option name="width" value="1281" />
@@ -429,6 +556,10 @@
               <item name="SocialNetwork" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> Post_Likes
               <item name="assets" type="462c0819:PsiDirectoryNode" />
               <item name="stylesheets" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -437,9 +568,19 @@
               <item name="SocialNetwork" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="controllers" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
 =======
               <item name="models" type="462c0819:PsiDirectoryNode" />
 >>>>>>> Post_Likes
+=======
+>>>>>>> Post_Likes
+            </path>
+            <path>
+              <item name="SocialNetwork" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SocialNetwork" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+>>>>>>> master
+              <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SocialNetwork" type="b2602c69:ProjectViewProjectNode" />
@@ -458,13 +599,9 @@
               <item name="SocialNetwork" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="posts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SocialNetwork" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SocialNetwork" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
+              <item name="likes" type="462c0819:PsiDirectoryNode" />
+=======
               <item name="advanced_searches" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -480,6 +617,7 @@
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="shared" type="462c0819:PsiDirectoryNode" />
+>>>>>>> master
             </path>
             <path>
               <item name="SocialNetwork" type="b2602c69:ProjectViewProjectNode" />
@@ -488,7 +626,30 @@
 =======
 >>>>>>> 58688b965568083880a109b1075ae16e57e5233c
               <item name="views" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
+              <item name="posts" type="462c0819:PsiDirectoryNode" />
+=======
+>>>>>>> master
             </path>
+            <path>
+              <item name="SocialNetwork" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SocialNetwork" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="shared" type="462c0819:PsiDirectoryNode" />
+            </path>
+<<<<<<< HEAD
+            <path>
+              <item name="SocialNetwork" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SocialNetwork" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="static_pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> Post_Likes
             <path>
               <item name="SocialNetwork" type="b2602c69:ProjectViewProjectNode" />
               <item name="SocialNetwork" type="462c0819:PsiDirectoryNode" />
@@ -496,26 +657,16 @@
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="users" type="462c0819:PsiDirectoryNode" />
             </path>
-<<<<<<< HEAD
             <path>
               <item name="SocialNetwork" type="b2602c69:ProjectViewProjectNode" />
               <item name="SocialNetwork" type="462c0819:PsiDirectoryNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
-<<<<<<< HEAD
-            <path>
-              <item name="SocialNetwork" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SocialNetwork" type="462c0819:PsiDirectoryNode" />
-              <item name="db" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SocialNetwork" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SocialNetwork" type="462c0819:PsiDirectoryNode" />
-              <item name="db" type="462c0819:PsiDirectoryNode" />
-              <item name="migrate" type="462c0819:PsiDirectoryNode" />
-            </path>
 =======
 >>>>>>> 58688b965568083880a109b1075ae16e57e5233c
+<<<<<<< HEAD
+=======
+>>>>>>> Post_Likes
 =======
 >>>>>>> Post_Likes
           </expand>
@@ -527,14 +678,24 @@
       <pane id="RailsProjectView" />
       <pane id="Scope" />
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+      <pane id="Scratches" />
+      <pane id="RailsProjectView" />
+=======
+>>>>>>> Post_Likes
 =======
       <pane id="Scope" />
       <pane id="RailsProjectView" />
       <pane id="Scratches" />
 >>>>>>> 58688b965568083880a109b1075ae16e57e5233c
+<<<<<<< HEAD
 =======
       <pane id="Scratches" />
       <pane id="RailsProjectView" />
+>>>>>>> Post_Likes
+=======
+>>>>>>> master
 >>>>>>> Post_Likes
     </panes>
   </component>
@@ -551,10 +712,10 @@
       <recent name="$PROJECT_DIR$/app/views/static_pages" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/views/shared" />
       <recent name="$PROJECT_DIR$/app/views/posts" />
-      <recent name="$PROJECT_DIR$/app/views/users" />
       <recent name="$PROJECT_DIR$/app/views/likes" />
+      <recent name="$PROJECT_DIR$/app/views/shared" />
+      <recent name="$PROJECT_DIR$/app/views/users" />
       <recent name="$PROJECT_DIR$/app/views/static_pages" />
     </key>
   </component>
@@ -711,11 +872,20 @@
       <workItem from="1513696391483" duration="7999000" />
       <workItem from="1513707903714" duration="2850000" />
 <<<<<<< HEAD
+<<<<<<< HEAD
       <workItem from="1513711474288" duration="4247000" />
       <workItem from="1513940142571" duration="2140000" />
 =======
       <workItem from="1513711474288" duration="4849000" />
       <workItem from="1513790065544" duration="28733000" />
+>>>>>>> Post_Likes
+=======
+      <workItem from="1513711474288" duration="4849000" />
+      <workItem from="1513790065544" duration="40876000" />
+=======
+      <workItem from="1513711474288" duration="4247000" />
+      <workItem from="1513940142571" duration="2140000" />
+>>>>>>> master
 >>>>>>> Post_Likes
     </task>
     <servers />
@@ -723,12 +893,21 @@
   <component name="TimeTrackingManager">
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+    <option name="totallyTimeSpent" value="135935000" />
+=======
+>>>>>>> Post_Likes
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="127931000" />
 =======
     <option name="totallyTimeSpent" value="124540000" />
 >>>>>>> 58688b965568083880a109b1075ae16e57e5233c
+<<<<<<< HEAD
 =======
     <option name="totallyTimeSpent" value="123792000" />
+>>>>>>> Post_Likes
+=======
+>>>>>>> master
 >>>>>>> Post_Likes
   </component>
   <component name="TodoView">
@@ -742,6 +921,25 @@
   </component>
   <component name="ToolWindowManager">
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    <frame x="75" y="16" width="1297" height="780" extended-state="7" />
+    <layout>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32886904" sideWeight="0.49719775" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2797619" sideWeight="0.40592474" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32886904" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937685" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3377976" sideWeight="0.59407526" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46130952" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2409928" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17053643" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32886904" sideWeight="0.4939952" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+=======
+>>>>>>> Post_Likes
 <<<<<<< HEAD
     <frame x="159" y="40" width="1309" height="780" extended-state="6" />
     <editor active="true" />
@@ -797,6 +995,7 @@
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32886904" sideWeight="0.49719775" order="7" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
 =======
     <frame x="75" y="16" width="1297" height="780" extended-state="6" />
     <editor active="true" />
@@ -815,12 +1014,16 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
 >>>>>>> Post_Likes
+=======
+>>>>>>> master
+>>>>>>> Post_Likes
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.54910713" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34077382" sideWeight="0.39791834" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
 <<<<<<< HEAD
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32886904" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937685" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -852,11 +1055,27 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17053643" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32886904" sideWeight="0.4939952" order="1" side_tool="false" content_ui="tabs" />
 >>>>>>> Post_Likes
+=======
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+=======
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32886904" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937685" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34077382" sideWeight="0.60208166" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46130952" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24979983" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17053643" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+>>>>>>> Post_Likes
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
+>>>>>>> master
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -899,6 +1118,7 @@
   <component name="editorHistoryManager">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     <entry file="file://$PROJECT_DIR$/app/views/layouts/_footer.html.erb">
       <provider selected="true" editor-type-id="text-editor">
@@ -936,28 +1156,62 @@
     <entry file="file://$PROJECT_DIR$/app/views/shared/_feed.erb" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/330d2ed6-6a92-489e-8c26-957127af0eda/console.sql" />
     <entry file="file://$PROJECT_DIR$/test/models/user_test.rb">
+=======
+    <entry file="file://$PROJECT_DIR$/app/uploaders/picture_uploader.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="11" lean-forward="false" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
+        <state relative-caret-position="36">
+          <caret line="2" column="37" lean-forward="false" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
+=======
+<<<<<<< HEAD
+=======
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/_footer.html.erb">
+>>>>>>> Post_Likes
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+>>>>>>> master
+          <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="das://table:/c2b883d3/330d2ed6-6a92-489e-8c26-957127af0eda/SocialNetwork_development.public.likes" />
     <entry file="file://$PROJECT_DIR$/app/views/posts/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
           <caret line="2" column="32" lean-forward="false" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
+=======
+<<<<<<< HEAD
+    <entry file="das://table:/c2b883d3/330d2ed6-6a92-489e-8c26-957127af0eda/SocialNetwork_development.public.friends">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+>>>>>>> Post_Likes
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
+    <entry file="file://$PROJECT_DIR$/app/helpers/users_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="21" column="8" lean-forward="false" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/db/migrate/20171219174914_add_picture_to_posts.rb">
+=======
+    <entry file="file://$PROJECT_DIR$/db/migrate/20171211204914_create_likes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="3" lean-forward="true" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20171211193225_create_users.rb">
+=======
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/mailer.text.erb">
+>>>>>>> Post_Likes
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1004,6 +1258,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20171219174914_add_picture_to_posts.rb">
+<<<<<<< HEAD
+>>>>>>> Post_Likes
+=======
+>>>>>>> master
 >>>>>>> Post_Likes
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1013,19 +1271,75 @@
       </provider>
     </entry>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <entry file="das://table:/c2b883d3/330d2ed6-6a92-489e-8c26-957127af0eda/SocialNetwork_development.public.friends" />
     <entry file="das://table:/c2b883d3/330d2ed6-6a92-489e-8c26-957127af0eda/SocialNetwork_development.public.posts" />
     <entry file="file://$PROJECT_DIR$/app/helpers/users_helper.rb">
 =======
     <entry file="file://$PROJECT_DIR$/app/uploaders/picture_uploader.rb">
 >>>>>>> Post_Likes
+=======
+    <entry file="file://$PROJECT_DIR$/db/migrate/20171211195419_create_posts.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="37" lean-forward="false" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
 <<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/db/migrate/20171211200054_create_phones.rb">
+=======
+    <entry file="das://table:/c2b883d3/330d2ed6-6a92-489e-8c26-957127af0eda/SocialNetwork_development.public.friends" />
+    <entry file="das://table:/c2b883d3/330d2ed6-6a92-489e-8c26-957127af0eda/SocialNetwork_development.public.posts" />
+    <entry file="file://$PROJECT_DIR$/app/helpers/users_helper.rb">
+>>>>>>> master
+>>>>>>> Post_Likes
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    <entry file="file://$PROJECT_DIR$/db/seeds.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="43" column="40" lean-forward="false" selection-start-line="43" selection-start-column="40" selection-end-line="43" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/sessions_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/shared/_stats.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="18" lean-forward="false" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/posts/_like_form.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/static_pages/_like_form.html.erb">
+=======
+>>>>>>> Post_Likes
     <entry file="file://$PROJECT_DIR$/app/controllers/posts_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="244">
@@ -1066,6 +1380,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/_header_loggedin.html.erb">
+<<<<<<< HEAD
 =======
     <entry file="das://table:/c2b883d3/330d2ed6-6a92-489e-8c26-957127af0eda/SocialNetwork_development.public.friends">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
@@ -1075,21 +1390,110 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/helpers/users_helper.rb">
+=======
+>>>>>>> master
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1278">
+          <caret line="71" column="17" lean-forward="false" selection-start-line="71" selection-start-column="17" selection-end-line="71" selection-end-column="17" />
+=======
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+<<<<<<< HEAD
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/users/_user.json.jbuilder">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/users/edit.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="23" lean-forward="false" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/users/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/static_pages/contact.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/users/_user.html.erb">
+>>>>>>> Post_Likes
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/db/migrate/20171211204914_create_likes.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="12" column="3" lean-forward="true" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
+=======
+    <entry file="file://$PROJECT_DIR$/app/views/users/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+>>>>>>> Post_Likes
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/db/migrate/20171211193225_create_users.rb">
+=======
+    <entry file="das://table:/c2b883d3/330d2ed6-6a92-489e-8c26-957127af0eda/SocialNetwork_development.public.posts">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://src:table:/c2b883d3/330d2ed6-6a92-489e-8c26-957127af0eda/SocialNetwork_development.public.likes">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="13" lean-forward="false" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/330d2ed6-6a92-489e-8c26-957127af0eda/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="60" lean-forward="false" selection-start-line="0" selection-start-column="60" selection-end-line="0" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="821">
+          <caret line="49" column="12" lean-forward="false" selection-start-line="49" selection-start-column="12" selection-end-line="49" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/posts/_post.json.jbuilder">
+>>>>>>> Post_Likes
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1097,7 +1501,43 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/db/migrate/20171211195419_create_posts.rb">
+>>>>>>> Post_Likes
+=======
+    <entry file="file://$PROJECT_DIR$/app/views/posts/new.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/posts/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/posts/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="32" lean-forward="false" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/shared/_post_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="51" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/shared/_user_info.html.erb">
 >>>>>>> Post_Likes
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1278">
@@ -1107,6 +1547,33 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/static_pages/home.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="14" column="8" lean-forward="false" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/static_pages_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="95" lean-forward="false" selection-start-line="4" selection-start-column="95" selection-end-line="4" selection-end-column="95" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/phone.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+=======
+>>>>>>> Post_Likes
 >>>>>>> 58688b965568083880a109b1075ae16e57e5233c
         </state>
       </provider>
@@ -1203,12 +1670,16 @@
 =======
         <state relative-caret-position="216">
           <caret line="28" column="13" lean-forward="true" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> Post_Likes
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20171211200054_create_phones.rb">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
@@ -1276,6 +1747,8 @@
     <entry file="file://$PROJECT_DIR$/app/controllers/sessions_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
+=======
+>>>>>>> Post_Likes
         <state relative-caret-position="108">
           <caret line="6" column="12" lean-forward="false" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
 >>>>>>> 58688b965568083880a109b1075ae16e57e5233c
@@ -1335,6 +1808,7 @@
 <<<<<<< HEAD
         <state relative-caret-position="252">
           <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+<<<<<<< HEAD
 =======
         <state relative-caret-position="72">
           <caret line="4" column="23" lean-forward="false" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="23" />
@@ -1394,6 +1868,9 @@
         <state relative-caret-position="18">
           <caret line="1" column="13" lean-forward="false" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
 >>>>>>> Post_Likes
+=======
+>>>>>>> master
+>>>>>>> Post_Likes
           <folding />
 =======
         <state relative-caret-position="216">
@@ -1403,14 +1880,21 @@
       </provider>
     </entry>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/db/migrate/20171211203300_add_hometown_to_users.rb">
 =======
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/330d2ed6-6a92-489e-8c26-957127af0eda/console.sql">
 >>>>>>> Post_Likes
+=======
+    <entry file="file://$PROJECT_DIR$/app/models/friend_request.rb">
+=======
+    <entry file="file://$PROJECT_DIR$/db/migrate/20171211203300_add_hometown_to_users.rb">
+>>>>>>> master
+>>>>>>> Post_Likes
       <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
         <state relative-caret-position="0">
-          <caret line="0" column="60" lean-forward="false" selection-start-line="0" selection-start-column="60" selection-end-line="0" selection-end-column="60" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
 =======
         <state relative-caret-position="234">
@@ -1420,8 +1904,25 @@
       </provider>
     </entry>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/models/city.rb">
       <provider selected="true" editor-type-id="text-editor">
+=======
+    <entry file="file://$PROJECT_DIR$/app/models/city.rb">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/post.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+=======
+>>>>>>> Post_Likes
         <state relative-caret-position="18">
           <caret line="1" column="17" lean-forward="false" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
         </state>
@@ -1432,15 +1933,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="630">
           <caret line="35" column="42" lean-forward="false" selection-start-line="35" selection-start-column="42" selection-end-line="35" selection-end-column="42" />
+<<<<<<< HEAD
 =======
     <entry file="file://$PROJECT_DIR$/app/models/post.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+=======
+>>>>>>> master
+>>>>>>> Post_Likes
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="821">
@@ -1454,6 +1960,13 @@
     <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
 =======
     <entry file="file://$PROJECT_DIR$/app/models/friend.rb">
+>>>>>>> Post_Likes
+=======
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/app/models/application_record.rb">
+=======
+    <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
+>>>>>>> master
 >>>>>>> Post_Likes
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -1469,36 +1982,65 @@
       </provider>
     </entry>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    <entry file="file://$PROJECT_DIR$/app/views/users/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" column="28" lean-forward="false" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="28" />
+=======
+>>>>>>> Post_Likes
     <entry file="file://$PROJECT_DIR$/app/controllers/static_pages_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+<<<<<<< HEAD
 =======
     <entry file="file://$PROJECT_DIR$/app/models/like.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
 >>>>>>> Post_Likes
-          <folding />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/app/controllers/sessions_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
 =======
-    <entry file="file://$PROJECT_DIR$/app/views/users/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="24" />
+>>>>>>> master
 >>>>>>> Post_Likes
           <folding />
         </state>
       </provider>
     </entry>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    <entry file="file://$PROJECT_DIR$/app/models/friend.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+=======
+>>>>>>> Post_Likes
+    <entry file="file://$PROJECT_DIR$/app/controllers/sessions_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+<<<<<<< HEAD
+=======
+    <entry file="file://$PROJECT_DIR$/app/views/users/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="24" />
+>>>>>>> Post_Likes
+=======
+>>>>>>> master
+>>>>>>> Post_Likes
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    <entry file="file://$PROJECT_DIR$/app/views/posts/_post.html.erb">
+=======
+>>>>>>> Post_Likes
 <<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
@@ -1527,6 +2069,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/shared/_post_form.html.erb">
+<<<<<<< HEAD
 =======
     <entry file="das://table:/c2b883d3/330d2ed6-6a92-489e-8c26-957127af0eda/SocialNetwork_development.public.likes">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
@@ -1537,75 +2080,135 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/posts/_post.json.jbuilder">
 >>>>>>> Post_Likes
+=======
+>>>>>>> master
+>>>>>>> Post_Likes
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="270">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    <entry file="das://table:/c2b883d3/330d2ed6-6a92-489e-8c26-957127af0eda/SocialNetwork_development.public.likes">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/shared/_feed.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="9" lean-forward="false" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+=======
+>>>>>>> Post_Likes
     <entry file="file://$PROJECT_DIR$/app/views/layouts/_header.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+<<<<<<< HEAD
 =======
     <entry file="file://$PROJECT_DIR$/app/views/posts/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
           <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="33" />
 >>>>>>> Post_Likes
+=======
+>>>>>>> Post_Likes
           <folding />
         </state>
       </provider>
     </entry>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> Post_Likes
     <entry file="file://$PROJECT_DIR$/app/controllers/advanced_searches_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="15" column="27" lean-forward="true" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+<<<<<<< HEAD
 =======
     <entry file="file://$PROJECT_DIR$/app/views/posts/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
           <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
 >>>>>>> Post_Likes
+=======
+>>>>>>> master
+>>>>>>> Post_Likes
           <folding />
         </state>
       </provider>
     </entry>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    <entry file="file://$PROJECT_DIR$/config/application.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="19" lean-forward="false" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+=======
+>>>>>>> Post_Likes
     <entry file="file://$PROJECT_DIR$/app/views/advanced_searches/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+<<<<<<< HEAD
 =======
     <entry file="file://$PROJECT_DIR$/app/views/posts/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
           <caret line="2" column="32" lean-forward="false" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
 >>>>>>> Post_Likes
-          <folding />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/app/models/advanced_search.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
->>>>>>> 58688b965568083880a109b1075ae16e57e5233c
 =======
-    <entry file="file://$PROJECT_DIR$/app/controllers/likes_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+>>>>>>> master
 >>>>>>> Post_Likes
           <folding />
         </state>
       </provider>
     </entry>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    <entry file="file://$PROJECT_DIR$/app/views/posts/_unlike.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="40" lean-forward="false" selection-start-line="1" selection-start-column="40" selection-end-line="1" selection-end-column="40" />
+=======
+>>>>>>> Post_Likes
+    <entry file="file://$PROJECT_DIR$/app/models/advanced_search.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+>>>>>>> 58688b965568083880a109b1075ae16e57e5233c
+<<<<<<< HEAD
+=======
+    <entry file="file://$PROJECT_DIR$/app/controllers/likes_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+>>>>>>> Post_Likes
+=======
+>>>>>>> master
+>>>>>>> Post_Likes
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    <entry file="file://$PROJECT_DIR$/app/controllers/posts_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="28" column="7" lean-forward="false" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="12" />
+=======
+>>>>>>> Post_Likes
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
@@ -1614,30 +2217,68 @@
 =======
         <state relative-caret-position="252">
           <caret line="14" column="7" lean-forward="false" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+<<<<<<< HEAD
 =======
     <entry file="file://$PROJECT_DIR$/app/views/shared/_post_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="6" column="51" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="51" />
 >>>>>>> Post_Likes
+=======
+>>>>>>> master
+>>>>>>> Post_Likes
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
 <<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
 =======
     <entry file="file://$PROJECT_DIR$/app/views/shared/_user_info.html.erb">
 >>>>>>> Post_Likes
+=======
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="20" column="20" lean-forward="false" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/shared/_like_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="9" lean-forward="false" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/posts/_like.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="69" lean-forward="false" selection-start-line="0" selection-start-column="69" selection-end-line="0" selection-end-column="69" />
+=======
+    <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
+>>>>>>> Post_Likes
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
           <caret line="13" column="23" lean-forward="false" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
 >>>>>>> 58688b965568083880a109b1075ae16e57e5233c
+>>>>>>> master
           <folding />
         </state>
       </provider>
     </entry>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    <entry file="file://$PROJECT_DIR$/app/views/likes/create.js.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="38" lean-forward="false" selection-start-line="1" selection-start-column="38" selection-end-line="1" selection-end-column="38" />
+=======
+>>>>>>> Post_Likes
     <entry file="file://$PROJECT_DIR$/app/models/user.rb">
       <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
@@ -1647,17 +2288,29 @@
         <state relative-caret-position="458">
           <caret line="104" column="5" lean-forward="true" selection-start-line="104" selection-start-column="5" selection-end-line="104" selection-end-column="5" />
 >>>>>>> 58688b965568083880a109b1075ae16e57e5233c
+<<<<<<< HEAD
 =======
     <entry file="file://$PROJECT_DIR$/app/views/static_pages/home.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="224">
           <caret line="14" column="8" lean-forward="false" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
 >>>>>>> Post_Likes
+=======
+>>>>>>> master
+>>>>>>> Post_Likes
           <folding />
         </state>
       </provider>
     </entry>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    <entry file="file://$PROJECT_DIR$/app/views/likes/destroy.js.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="47" lean-forward="false" selection-start-line="1" selection-start-column="47" selection-end-line="1" selection-end-column="47" />
+=======
+>>>>>>> Post_Likes
     <entry file="file://$PROJECT_DIR$/app/views/users/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
@@ -1667,6 +2320,7 @@
         <state relative-caret-position="-1144">
           <caret line="22" column="34" lean-forward="true" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
 >>>>>>> 58688b965568083880a109b1075ae16e57e5233c
+<<<<<<< HEAD
 =======
     <entry file="file://$PROJECT_DIR$/app/controllers/static_pages_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
@@ -1688,37 +2342,57 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="49" lean-forward="false" selection-start-line="0" selection-start-column="49" selection-end-line="0" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/posts/_post.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="45" lean-forward="false" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/posts/_like.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+=======
+>>>>>>> master
 >>>>>>> Post_Likes
           <folding />
         </state>
       </provider>
     </entry>
 <<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/app/controllers/likes_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="72">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+>>>>>>> Post_Likes
+=======
+        <state relative-caret-position="203">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+=======
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/app/views/advanced_searches/new.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="52" lean-forward="false" selection-start-line="4" selection-start-column="52" selection-end-line="4" selection-end-column="52" />
+>>>>>>> master
+>>>>>>> Post_Likes
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    <entry file="file://$PROJECT_DIR$/app/models/like.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+=======
+>>>>>>> Post_Likes
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="20" column="44" lean-forward="false" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
+<<<<<<< HEAD
 =======
     <entry file="file://$PROJECT_DIR$/app/views/shared/_like_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="3" column="43" lean-forward="false" selection-start-line="3" selection-start-column="43" selection-end-line="3" selection-end-column="43" />
+>>>>>>> Post_Likes
+=======
+>>>>>>> master
 >>>>>>> Post_Likes
           <folding />
         </state>
@@ -1740,6 +2414,7 @@
     <entry file="file://$PROJECT_DIR$/app/views/users/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
+<<<<<<< HEAD
         <state relative-caret-position="480">
           <caret line="44" column="62" lean-forward="false" selection-start-line="44" selection-start-column="62" selection-end-line="44" selection-end-column="62" />
 >>>>>>> 58688b965568083880a109b1075ae16e57e5233c
@@ -1754,6 +2429,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
           <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+>>>>>>> Post_Likes
+=======
+        <state relative-caret-position="-8">
+          <caret line="54" column="10" lean-forward="false" selection-start-line="54" selection-start-column="10" selection-end-line="54" selection-end-column="10" />
+=======
+        <state relative-caret-position="480">
+          <caret line="44" column="62" lean-forward="false" selection-start-line="44" selection-start-column="62" selection-end-line="44" selection-end-column="62" />
+>>>>>>> 58688b965568083880a109b1075ae16e57e5233c
+>>>>>>> master
 >>>>>>> Post_Likes
           <folding />
         </state>

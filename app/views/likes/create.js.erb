@@ -1,0 +1,4 @@
+$('#post-<%= @post.id.to_s %> .likes')
+    .html("<%= escape_javascript(render('posts/unlike', post: @post)) %>")
+$('#post-<%= @post.id.to_s %> .likes_count').
+html('<%= pluralize(@post.likes.count,'person')%>  liked this post')
