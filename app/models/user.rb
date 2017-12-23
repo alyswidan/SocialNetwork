@@ -49,6 +49,7 @@ class User < ApplicationRecord
                inner join users as u2 on u2.id=friends.user_id').
               where('friends.other_user_id' => id)
 
+
     option2 = User.
               joins('inner join friends on users.id = friends.other_user_id').
               where('friends.user_id' => id)
@@ -60,13 +61,12 @@ class User < ApplicationRecord
     query1 = Post.where(is_public: true)
     friend_ids = buddies.ids.join(',')
     if friend_ids.present?
-      query2 = Post.where("user_id IN (#{friend_ids})
-      OR user_id = :user_id and is_public=false", user_id: id)
+      query2=Post.where("user_id IN (#{friend_ids})
+                        OR user_id = :user_id and is_public=false", user_id: id)
       Post.from("(#{query1.to_sql} Union #{query2.to_sql}) AS Posts")
-          .order(created_at: :desc)
+          .order(created_at: :DESC)
     else
       Post.where(:is_public => true).order(created_at: :desc)
-
     end
   end
 
@@ -83,7 +83,6 @@ class User < ApplicationRecord
   end
 
   def birthdate=(date)
-
     if date.class == String && !date.empty?
       super Date.strptime date, '%m/%d/%Y'
     else
@@ -107,19 +106,13 @@ class User < ApplicationRecord
     else
       me_on_right.destroy
     end
-
-
   end
 
   def is_friends_with?(other_user)
     !Friend.where(other_user_id: other_user.id, user_id: id).empty? \
  || !Friend.where(other_user_id: id, user_id: other_user.id).empty?
-
   end
 
-  def index
-    @users = User.paginate(page: params[:page])
-  end
 
   # Validates the size of an uploaded picture.
   def picture_size
@@ -127,6 +120,5 @@ class User < ApplicationRecord
       errors.add(:picture, 'should be less than 5MB')
     end
   end
-
 
 end

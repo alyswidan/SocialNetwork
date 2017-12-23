@@ -1,4 +1,5 @@
 class PostsController < ApplicationController
+  before_action :logged_in_user
   before_action :set_post, only: [:show, :edit, :update, :destroy]
 
 
@@ -29,7 +30,10 @@ class PostsController < ApplicationController
     @post = helpers.current_user.posts.build(post_params)
     if @post.save
       flash[:success] = "post created!"
-      redirect_to root_url
+      respond_to do |f|
+          f.html{redirect_to root_url}
+          f.js
+      end
     else
       @feed_items = []
       render 'static_pages/home'
@@ -71,6 +75,14 @@ class PostsController < ApplicationController
   private
   def post_params
     params.require(:post).permit(:caption,:picture,:is_public)
+  end
+
+  def logged_in_user
+    unless helpers.logged_in?
+      #helpers.store_location
+      flash[:danger] = "please log in"
+      redirect_to login_url
+    end
   end
 
 end

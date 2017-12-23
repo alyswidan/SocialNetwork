@@ -3,6 +3,7 @@ class UsersController < ApplicationController
   before_action :correct_user, only:[:edit, :update]
   before_action :admin_user, only: :destroy
   before_action :set_user, only: [:show, :edit, :update, :destroy]
+  before_action :check_friends, only: :about
 
   # GET /users
   # GET /users.json
@@ -72,6 +73,14 @@ class UsersController < ApplicationController
     redirect_to users_url
   end
 
+  def buddies
+    @user = User.find(params[:id])
+  end
+
+  def about
+    @user = User.find(params[:id])
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
   def set_user
@@ -100,5 +109,12 @@ class UsersController < ApplicationController
 
   def admin_user
     redirect_to(root_url) unless helpers.current_user.admin?
+  end
+
+  def check_friends
+    @user =  User.find(params[:id])
+    debugger
+    x = helpers.current_user.is_friends_with?(@user)
+    redirect_to(@user) unless x
   end
 end

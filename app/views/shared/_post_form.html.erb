@@ -1,6 +1,6 @@
 <div class="create-post">
 
-  <%= form_for(@post, html: { multipart: true }) do |f| %>
+  <%= form_for(@post, html: { multipart: true }, remote: true) do |f| %>
 
     <div class="row">
       <%= render 'shared/error_messages' , object: f.object %>

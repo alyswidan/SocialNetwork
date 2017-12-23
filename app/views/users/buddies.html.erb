@@ -1,0 +1,17 @@
+<div class="container">
+
+  <hgroup class="mb20">
+    <h1>Friends List</h1>
+    <h2 class="lead">
+      <strong class="text-danger"><%= pluralize(@user.buddies.count,'Friend') %></strong>
+    </h2>
+  </hgroup>
+
+  <section class="col-xs-12 col-sm-6 col-md-12">
+    <% @user.buddies.each do |buddies| %>
+      <article class="row">
+        <%= render buddies %>
+      </article>
+    <% end %>
+  </section>
+</div>

@@ -18,10 +18,12 @@ Rails.application.routes.draw do
   resources :users do
     member do
       get :likes
+      get :buddies
+      get :about
     end
   end
 
-  resources :posts, only: [:create, :destroy]
-  resources :likes, only: [:create, :destroy]
-
+  resources :posts, only: %i[create destroy]
+  resources :likes, only: %i[create destroy]
+  
 end
