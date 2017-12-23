@@ -15,8 +15,6 @@ User.create!(first_name: "Zeina",
              birthdate: 22.years.ago,
              admin:true)
 
-
-
 genders = %i[male female]
 
 
@@ -24,7 +22,7 @@ genders = %i[male female]
   x = Faker::Avatar.image
   User.create!(first_name: "Example#{n}",
                last_name: 'User',
-               email: "user#{n}@railstutorial.org",
+               email: "user#{n}@rail.org",
                nickname: "hamada #{n + 1}#{n + 2}#{n + 3}",
                about_me: Faker::Lorem.sentence(n+5),
                password: 'password',

@@ -80,6 +80,7 @@ class UsersController < ApplicationController
   def about
     @user = User.find(params[:id])
   end
+
   def received_requests
     @user = User.find(params[:id])
   end
@@ -116,7 +117,7 @@ class UsersController < ApplicationController
 
   def check_friends
     @user =  User.find(params[:id])
-    x = helpers.current_user.is_friends_with?(@user)
+    x = helpers.current_user.is_friends_with?(@user) || helpers.current_user.eql?(@user)
     redirect_to(@user) unless x
   end
 
@@ -126,6 +127,5 @@ class UsersController < ApplicationController
     @users = @user.buddies
     render 'show_friend'
   end
-
 
 end
