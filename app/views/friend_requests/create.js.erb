@@ -1,2 +1,7 @@
+<% if current_user.is_friends_with?(@user)%>
+$("#friends_form").html("<%= escape_javascript(render('users/unfriend')) %>")
+$("#friends").html('<%= @user.friends.count %>')
+<% else %>
 $("#friends_form").
 html("<%= escape_javascript(render('users/pendding')) %>")
+<% end %>
