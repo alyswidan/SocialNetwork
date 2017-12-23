@@ -1,5 +1,6 @@
 
 
+
 <div class="post-content">
 
   <!--Post Date-->
@@ -18,8 +19,6 @@
          class="img-responsive post-image" >
 
     <div class="post-detail">
-
-      <%= post.likes.count%>
       <div class="user-info">
         <h5>
           <%= link_to post.user.full_name,user_path(post.user) %>
@@ -28,8 +27,12 @@
       </div>
 
         <div class="likes reaction">
+
           <%= render 'shared/like_form', post: post %>
         </div>
+      <div class="likes_count">
+        <%= pluralize(post.likes.count,'person')%>  liked this post
+      </div>
       <div class="line-divider"></div>
       <div class="post-text">
         <p>
