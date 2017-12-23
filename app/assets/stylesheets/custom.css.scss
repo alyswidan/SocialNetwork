@@ -140,6 +140,7 @@ aside {
     }
   }
 }
+
 .gravatar {
   float: left;
   margin-right: 10px;
@@ -170,6 +171,7 @@ input, textarea, select, .uneditable-input {
   margin-bottom: 15px;
   @include box_sizing;
 }
+
 input {
   height: auto !important;
 }
@@ -186,4 +188,3 @@ input {
   width: auto;
   margin-left: 0;
 }
-

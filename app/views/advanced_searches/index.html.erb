@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Advanced Searches</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>First name</th>
+      <th>Last name</th>
+      <th>Email</th>
+      <th>Hometown</th>
+      <th>Caption</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @advanced_searches.each do |advanced_search| %>
+      <tr>
+        <td><%= advanced_search.first_name %></td>
+        <td><%= advanced_search.last_name %></td>
+        <td><%= advanced_search.email %></td>
+        <td><%= advanced_search.hometown %></td>
+        <td><%= advanced_search.caption %></td>
+        <td><%= link_to 'Show', advanced_search %></td>
+        <td><%= link_to 'Edit', edit_advanced_search_path(advanced_search) %></td>
+        <td><%= link_to 'Destroy', advanced_search, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Advanced Search', new_advanced_search_path %>

@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>First name:</strong>
+  <%= @advanced_search.first_name %>
+</p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @advanced_search.last_name %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @advanced_search.email %>
+</p>
+
+<p>
+  <strong>Hometown:</strong>
+  <%= @advanced_search.hometown %>
+</p>
+
+<p>
+  <strong>Caption:</strong>
+  <%= @advanced_search.caption %>
+</p>
+
+<%= link_to 'Edit', edit_advanced_search_path(@advanced_search) %> |
+<%= link_to 'Back', advanced_searches_path %>

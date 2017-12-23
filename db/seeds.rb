@@ -5,40 +5,83 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-#
-User.create!(first_name: "Example",
-             last_name: "User",
-             email: "example@railstutorial.org",
-             password: "password",
-             password_confirmation: "password",
-             birthdate: 10.years.ago,
-             admin:true)
+
+
+
+genders = %i[male female]
+
+
+10.times do |n|
+  x = Faker::Avatar.image
+  puts x
+  User.create!(first_name: "Example#{n}",
+               last_name: 'User',
+               email: "user#{n}@railstutorial.org",
+               nickname: "hamada #{n + 1}#{n + 2}#{n + 3}",
+               about_me: Faker::Lorem.sentence(n+5),
+               password: 'password',
+               password_confirmation: 'password',
+               birthdate: ((n + 1) * 10).years.ago,
+               admin: true,
+               gender: genders[rand(genders.length)],
+               picture: x)
+end
 99.times do |n|
-  name = Faker::Name.name
-  email = "example-#{n+1}@railstutorial.org"
-  password = "passwordpassword"
-  birthdate= 2.days.ago
-  User.create!(first_name: name.split(' ')[0],
-               last_name: name.split(' ')[1],
+  first_name = Faker::Name.first_name
+  last_name = Faker::Name.last_name
+  email = Faker::Internet.email
+  password = 'password'
+  birthdate = 2.days.ago
+  User.create!(first_name: first_name,
+               last_name: last_name,
                email: email,
                password: password,
                password_confirmation: password,
-               birthdate: birthdate)
+               birthdate: birthdate,
+               gender: genders[rand(genders.length)])
 end
+<<<<<<< HEAD
 # postsS
 users = User.order(:created_at).take(7)
 5.times do
   caption = Faker::Lorem.sentence(5)
   users.each { |user| user.posts.create!(caption: caption) }
+=======
+
+users = User.all
+
+50.times do
+  City.create!(name: Faker::Address.city)
+>>>>>>> master
 end
 
+users.each do |user|
+  user.city = City.find(Faker::Number.between(1, 49))
+  user.save!
+end
+
+
+# add 50 random posts to each user posts
+
+users.each do |user|
+  3.times do |i|
+    caption = Faker::Lorem.sentence(5 + i) + user.full_name
+    user.posts.create!(caption: caption)
+  end
+end
+
+
 # Following relationships
-users = User.all
-user = users.first
+
+first_user = users.first
 buddies = users[2..50]
+<<<<<<< HEAD
 buddies.each { |buddy| user.add_friend(buddy) }
 
 # Likes
 posts = Post.all
 first_post = posts.first
 users.each { |user| user.like(first_post) }
+=======
+buddies.each { |buddy| first_user.add_friend(buddy) }
+>>>>>>> master
