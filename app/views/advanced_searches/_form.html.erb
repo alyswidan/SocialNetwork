@@ -1,0 +1,42 @@
+<%= form_with(model: advanced_search, local: true) do |form| %>
+  <% if advanced_search.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(advanced_search.errors.count, "error") %> prohibited this advanced_search from being saved:</h2>
+
+      <ul>
+      <% advanced_search.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :first_name %>
+    <%= form.text_field :first_name, id: :advanced_search_first_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :last_name %>
+    <%= form.text_field :last_name, id: :advanced_search_last_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :email %>
+    <%= form.text_field :email, id: :advanced_search_email %>
+  </div>
+
+  <div class="field">
+    <%= form.label :hometown %>
+    <%= form.text_field :hometown, id: :advanced_search_hometown %>
+  </div>
+
+  <div class="field">
+    <%= form.label :caption %>
+    <%= form.text_field :caption, id: :advanced_search_caption %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

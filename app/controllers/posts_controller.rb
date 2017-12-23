@@ -30,6 +30,7 @@ class PostsController < ApplicationController
       flash[:success] = "post created!"
       redirect_to root_url
     else
+      @feed_items = []
       render 'static_pages/home'
     end
   end
@@ -65,12 +66,10 @@ class PostsController < ApplicationController
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
-    def post_params
-      params.require(:post).permit(:caption, :is_public)
-    end
 
   private
-    def post_params
-      params.require(:post).permit(:caption)
-    end
+  def post_params
+    params.require(:post).permit(:caption,:picture,:is_public)
+  end
+
 end
