@@ -34,7 +34,6 @@ class UsersController < ApplicationController
   # POST /users.json
   def create
     @user = User.new(user_params)
-
     if @user.save
       helpers.log_in @user
       login_url @user
@@ -63,6 +62,10 @@ class UsersController < ApplicationController
     User.find(params[:id]).destroy
     flash[:sucess] = "User deleted"
     redirect_to users_url
+  end
+
+  def buddies
+    @user = User.find(params[:id])
   end
 
   private
@@ -94,4 +97,7 @@ class UsersController < ApplicationController
   def admin_user
     redirect_to(root_url) unless helpers.current_user.admin?
   end
+
+
+
 end
