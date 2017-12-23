@@ -3,9 +3,7 @@ class UsersController < ApplicationController
   before_action :correct_user, only:[:edit, :update]
   before_action :admin_user, only: :destroy
   before_action :set_user, only: [:show, :edit, :update, :destroy]
-=begin
-  before_action :
-=end
+  before_action :check_friends, only: :about
 
   # GET /users
   # GET /users.json
@@ -105,4 +103,10 @@ class UsersController < ApplicationController
     redirect_to(root_url) unless helpers.current_user.admin?
   end
 
+  def check_friends
+    @user =  User.find(params[:id])
+    debugger
+    x = helpers.current_user.is_friends_with?(@user)
+    redirect_to(@user) unless x
+  end
 end
