@@ -1,5 +1,7 @@
 class PostsController < ApplicationController
   before_action :set_post, only: [:show, :edit, :update, :destroy]
+  before_action :correct_user,
+                only: :destroy
 
 
   # GET /posts
@@ -52,12 +54,19 @@ class PostsController < ApplicationController
 
   # DELETE /posts/1
   # DELETE /posts/1.json
-  def destroy
-    @post.destroy
-    respond_to do |format|
-      format.html { redirect_to posts_url, notice: 'Post was successfully destroyed.' }
-      format.json { head :no_content }
+    def destroy
+      @post.destroy
+      flash[:success] = "post deleted"
+      redirect_to request.referrer || root_url
+    # respond_to do |format|
+    #   format.html { redirect_to posts_url, notice: 'Post was successfully destroyed.' }
+    #   format.json { head :no_content }
+
     end
+
+  def correct_user
+    @post = helpers.current_user.posts.find_by(id: params[:id])
+    redirect_to root_url if @post.nil?
   end
 
   private

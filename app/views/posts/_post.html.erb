@@ -34,6 +34,12 @@
         <%= pluralize(post.likes.count,'person')%>  liked this post
       </div>
       <div class="line-divider"></div>
+      <div class="delete-post">
+        <% if current_user?(post.user) %>
+        <%= link_to "delete", post, method: :delete,
+                    data: { confirm: "You sure?" } %>
+        <% end %>
+      </div>
       <div class="post-text">
         <p>
           <%= post.caption %>
