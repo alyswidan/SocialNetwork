@@ -32,4 +32,30 @@
       </div>
     </div><!--Timeline Menu for Large Screens End-->
   </div>
+
+
+  <div id="page-contents">
+    <div class="row">
+      <div class="col-md-3"></div>
+      <div class="col-md-7">
+
+        <!-- Post Create Box
+        ================================================= -->
+        <% if @user == current_user %>
+          <%= render 'shared/post_form' %>
+        <% end %>
+        <!-- Post Create Box End-->
+
+        <% if @user.posts.any? %>
+          <h3>Posts (<%= @user.posts.count %>)</h3>
+          <ol class="posts">
+            <%= render @posts %>
+          </ol>
+          <%= will_paginate @posts %>
+        <% end %>
+
+
+      </div>
+    </div>
+  </div>
 </div>

@@ -80,6 +80,9 @@ class UsersController < ApplicationController
   def about
     @user = User.find(params[:id])
   end
+  def received_requests
+    @user = User.find(params[:id])
+  end
 
   private
     # Use callbacks to share common setup or constraints between actions.
@@ -110,19 +113,19 @@ class UsersController < ApplicationController
   def admin_user
     redirect_to(root_url) unless helpers.current_user.admin?
   end
-<<<<<<< HEAD
 
   def check_friends
     @user =  User.find(params[:id])
-    debugger
     x = helpers.current_user.is_friends_with?(@user)
     redirect_to(@user) unless x
-=======
+  end
+
   def friends
     @title = "Friends"
     @user = User.find(params[:id])
     @users = @user.buddies
     render 'show_friend'
->>>>>>> friend_request
   end
+
+
 end

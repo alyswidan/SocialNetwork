@@ -1,9 +1,9 @@
 <% @user ||= current_user %>
 <div class="stats">
-  <a href="<%= buddies_user_path(@user) %>">
+  <a href="<%= buddies_user_path(@user) %>" class="active">
 
     <strong id="buddy" class="stat">
-      Friends <%= @user.buddies.count %>
+      <%= pluralize(@user.buddies.count,'Friend') %>
     </strong>
 
   </a>
