@@ -1,19 +1,3 @@
-<<<<<<< HEAD
-<li id="post-<%= post.id %>">
-  <span class="user"><%= link_to post.user.full_name, post.user %></span>
-  <span class="caption">
-    <%= post.caption %>
-    <%= image_tag post.picture.url if post.picture? %>
-  </span>
-  <span class="timestamp">
-Posted <%= time_ago_in_words(post.created_at) %> ago.
-</span>
-  <div class="likes">
-    <%= render 'shared/like_form', post: post %>
-  </div>
-
-</li>
-=======
 
 
 <div class="post-content">
@@ -28,25 +12,24 @@ Posted <%= time_ago_in_words(post.created_at) %> ago.
   <img src="<%= post.picture.url unless post.picture.blank?%>"
        class="img-responsive post-image" >
 
-  <div class="post-container">
+  <div class="post-container" id="post-<%= post.id %>">
     <!--user photo-->
     <img src="<%= post.user.picture.url unless post.user.picture.blank?%>"
          class="img-responsive post-image" >
 
     <div class="post-detail">
+
+      <%= post.likes.count%>
       <div class="user-info">
         <h5>
           <%= link_to post.user.full_name,user_path(post.user) %>
         </h5>
         <p class="text-muted"><%= time_ago_in_words(post.created_at) %> ago.</p>
       </div>
-      <div class="reaction">
-      <!--  <a class="btn text-green"><i class="icon ion-thumbsup"></i> 13</a>
-        <a class="btn text-red"><i class="fa fa-thumbs-down"></i> 0</a>-->
-        <div class="likes">
+
+        <div class="likes reaction">
           <%= render 'shared/like_form', post: post %>
         </div>
-      </div>
       <div class="line-divider"></div>
       <div class="post-text">
         <p>
