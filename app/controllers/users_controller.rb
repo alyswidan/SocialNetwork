@@ -22,6 +22,9 @@ class UsersController < ApplicationController
 
   # GET /users/new
   def new
+    if helpers.logged_in?
+      redirect_to helpers.current_user
+    end
     @user = User.new
   end
 
@@ -34,7 +37,6 @@ class UsersController < ApplicationController
   # POST /users.json
   def create
     @user = User.new(user_params)
-
     if @user.save
       helpers.log_in @user
       login_url @user
@@ -50,8 +52,13 @@ class UsersController < ApplicationController
   def update
     @user = User.find(params[:id])
     if @user.update_attributes(user_params)
-     flash[:success] = "Profile updated"
-     redirect_to @user
+      flash[:success] = "Profile updated"
+      unless params[:user][:picture].nil?
+        @user.posts
+             .create(caption:"#{@user.full_name} updated his profile picture",
+                     picture:params[:user][:picture])
+      end
+      redirect_to @user
     else
       render 'edit'
     end

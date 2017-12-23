@@ -17,6 +17,7 @@
   <p> <%= user.about_me %></p>
 
   <% if (not current_user.is_friends_with? user) && (user != current_user) %>
-  <button class="btn-primary">Add Friend</button>
+    <button class="btn-primary">Add Friend</button>
   <%end%>
+
 </div>

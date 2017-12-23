@@ -2,7 +2,9 @@ class AdvancedSearchesController < ApplicationController
 
   def results
     params[:advanced_search] = session[:advanced_search]
+
     @advanced_search = AdvancedSearch.new(advanced_search_params)
+
   end
 
 
@@ -15,7 +17,7 @@ class AdvancedSearchesController < ApplicationController
   # POST /advanced_searches
   def create
     session.delete(:advanced_search)
-    session[:advanced_search] = params[:advanced_search]
+    session[:advanced_search] = advanced_search_params
     redirect_to advanced_search_results_path
   end
 
@@ -28,5 +30,8 @@ class AdvancedSearchesController < ApplicationController
     params.require(:advanced_search).permit(:first_name,:simple,
                                             :last_name, :email,
                                             :city, :caption)
+  end
+  def empty_form?
+    advanced_search_params.all? {|k,v| v.empty? }
   end
 end
