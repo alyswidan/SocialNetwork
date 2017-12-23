@@ -14,15 +14,7 @@ class PictureUploader < CarrierWave::Uploader::Base
     storage :file
   end
 
-  include CarrierWave::MiniMagick
-  process resize_to_limit: [400, 400]
 
-  # Include RMagick or MiniMagick support:
-  # include CarrierWave::RMagick
-  # include CarrierWave::MiniMagick
-
-  # Choose what kind of storage to use for this uploader:
-  storage :file
 
   # storage :fog
 
@@ -31,6 +23,7 @@ class PictureUploader < CarrierWave::Uploader::Base
   def store_dir
     "uploads/#{model.class.to_s.underscore}/#{mounted_as}/#{model.id}"
   end
+
   # Provide a default URL as a default if there hasn't been a file uploaded:
   # def default_url(*args)
   #   # For Rails 3.1+ asset pipeline compatibility:
@@ -65,12 +58,6 @@ class PictureUploader < CarrierWave::Uploader::Base
   # end
 
   def default_url
-=begin
-    ActionController::Base
-        .helpers.asset_path('fallback/' + [version_name, 'my_fallback.jpg']
-                                              .compact.join('_'))
-=end
 
-    'http://placehold.it/300x300'
   end
 end

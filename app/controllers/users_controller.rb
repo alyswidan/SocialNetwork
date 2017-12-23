@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  before_action :logged_in_user, only: [:index ,:edit, :update,:destroy]
+  before_action :logged_in_user, only: [:index ,:edit, :update,:destroy,:friends]
   before_action :correct_user, only:[:edit, :update]
   before_action :admin_user, only: :destroy
   before_action :set_user, only: [:show, :edit, :update, :destroy]
@@ -110,11 +110,19 @@ class UsersController < ApplicationController
   def admin_user
     redirect_to(root_url) unless helpers.current_user.admin?
   end
+<<<<<<< HEAD
 
   def check_friends
     @user =  User.find(params[:id])
     debugger
     x = helpers.current_user.is_friends_with?(@user)
     redirect_to(@user) unless x
+=======
+  def friends
+    @title = "Friends"
+    @user = User.find(params[:id])
+    @users = @user.buddies
+    render 'show_friend'
+>>>>>>> friend_request
   end
 end

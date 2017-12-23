@@ -1,6 +1,5 @@
+
 <div class="col-xs-12 col-sm-12 col-md-3">
-
-
   <%= link_to user do%>
     <img src="<%= user.avatar %>"
          class="img-responsive profile-photo" />
@@ -16,9 +15,10 @@
   <p> <%= user.nickname %></p>
   <p> <%= user.about_me %></p>
 
+</div>
 
-  <!--< if (not current_user.is_friends_with? user) && (user != current_user) %>
-  <button class="btn-primary">Add Friend</button>
+
+ <!-- < if (not current_user.is_friends_with? user) && (user != current_user) %>
+    <= render ('users/friends_form') if logged_in? %>
   <end%>-->
 
-</div>

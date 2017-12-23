@@ -11,6 +11,19 @@ Rails.application.routes.draw do
   post   'login'  => 'sessions#create'
   delete 'logout' => 'sessions#destroy'
 
+<<<<<<< HEAD
+=======
+  resources :users do
+    member do
+      get :buddies
+      get :received_requests
+    end
+  end
+
+  resources :posts,      only: [:create, :destroy]
+  resources :friends,    only:[:create, :destroy]
+  resources :friend_requests,    only:[:create, :destroy]
+>>>>>>> friend_request
   get 'advanced_search' => 'advanced_searches#new'
   post 'advanced_search' => 'advanced_searches#create'
   get 'advanced_search/results' => 'advanced_searches#results'

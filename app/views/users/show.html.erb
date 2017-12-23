@@ -1,4 +1,5 @@
 <% provide(:title, @user.full_name) %>
+
 <div class="timeline">
   <div class="timeline-cover">
 
@@ -9,7 +10,7 @@
           <div class="profile-info">
 
             <img src="<%= @user.avatar %>"
-                 class="img-responsive profile-photo" >
+                 class="img-responsive profile-photo">
 
             <h3><%= @user.full_name %></h3>
             <p class="text-muted"><%= @user.nickname %></p>
@@ -20,43 +21,15 @@
 
             <li><%= link_to 'Profile', @user, class: 'active' %></li>
             <li><%= link_to 'About', about_user_path(@user), class: 'active' %></li>
-            <li><%= link_to 'Album', '#' %></li>
             <li><%= link_to 'Friends', buddies_user_path(@user), class: 'active' %></li>
+            <li><%= render 'shared/stats' %></li>
 
           </ul>
           <ul class="follow-me list-inline">
-            <li><button class="btn-primary">Add Friend</button></li>
+            <li><%= render 'friends_form' if logged_in? %></li>
           </ul>
         </div>
       </div>
     </div><!--Timeline Menu for Large Screens End-->
-
-
-
   </div>
-  <div id="page-contents">
-    <div class="row">
-      <div class="col-md-3"></div>
-      <div class="col-md-7">
-
-        <!-- Post Create Box
-        ================================================= -->
-        <% if @user == current_user %>
-          <%= render 'shared/post_form' %>
-        <% end %>
-        <!-- Post Create Box End-->
-
-        <% if @user.posts.any? %>
-          <h3>Posts (<%= @user.posts.count %>)</h3>
-          <ol class="posts">
-            <%= render @posts %>
-          </ol>
-          <%= will_paginate @posts %>
-        <% end %>
-
-
-      </div>
-    </div>
-  </div>
-</div>
 </div>

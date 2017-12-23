@@ -5,6 +5,15 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+#
+
+User.create!(first_name: "Zeina",
+             last_name: "Nada",
+             email: "zeina@z.com",
+             password: "zeinanada",
+             password_confirmation: "zeinanada",
+             birthdate: 22.years.ago,
+             admin:true)
 
 
 
@@ -13,7 +22,6 @@ genders = %i[male female]
 
 10.times do |n|
   x = Faker::Avatar.image
-  puts x
   User.create!(first_name: "Example#{n}",
                last_name: 'User',
                email: "user#{n}@railstutorial.org",
@@ -26,6 +34,7 @@ genders = %i[male female]
                gender: genders[rand(genders.length)],
                picture: x)
 end
+
 99.times do |n|
   first_name = Faker::Name.first_name
   last_name = Faker::Name.last_name
@@ -46,6 +55,7 @@ end
 users = User.all
 
 50.times do
+
   City.create!(name: Faker::Address.city)
 end
 
@@ -69,12 +79,11 @@ end
 
 first_user = users.first
 buddies = users[2..50]
-buddies.each { |buddy| first_user.add_friend(buddy) }
+buddies.each { |buddy| first_user.send_request(buddy) }
+
 
 
 # Likes
 posts = Post.all
 first_post = posts.first
 users.each { |user| user.like(first_post) }
-
-

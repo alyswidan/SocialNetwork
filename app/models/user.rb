@@ -1,15 +1,27 @@
 class User < ApplicationRecord
   enum marital_status: %i[single married divorced engaged]
+
   enum gender: %i[male female not_specified]
+
   has_many :posts, dependent: :destroy
+
   has_many :phones
+
   belongs_to :city, optional: true
-  has_many :friend_requests
+
   has_many :friends
+
   has_many :likes,dependent: :destroy
 
-  has_many :sent_requests, through: :friend_requests, source: :other_user
-  has_many :received_requests, through: :friend_requests, source: :user
+  has_many :sent_requests, class_name: "FriendRequest",
+                                      foreign_key: "user_id",
+                                      dependent: :destroy
+
+
+  has_many :received_requests, class_name: "FriendRequest",
+           foreign_key: "other_user_id",
+           dependent: :destroy
+
 
   has_many(:buddies, through: :friends, source: :other_user)
   has_secure_password
@@ -94,18 +106,31 @@ class User < ApplicationRecord
     "#{first_name.capitalize} #{last_name.capitalize}"
   end
 
+  def send_request(other_user_id)
+    sent_requests.create(other_user_id: other_user_id)
+  end
+
+  def remove_request(other_user_id)
+
+    sent_requests.find_by(other_user_id: other_user_id).destroy
+  end
+
+  def accept_request(friend_request)
+    if friend_request.other_user_id == self.id
+      add_friend(friend_request.user)
+      friend_request.destroy
+    end
+  end
+
   def add_friend(other_user)
     friends.create(other_user_id: other_user.id)
   end
 
-  def remove_friend(other_user)
-    me_on_left = friends.find_by(other_user_id: other_user.id)
-    me_on_right = Friend.where(user_id: other_user.id, other_user_id: self.id)[0]
-    if !me_on_left.nil?
-      me_on_left.destroy
-    else
-      me_on_right.destroy
-    end
+
+  def remove_friend(other_user_id)
+
+    find_friend(other_user_id).destroy
+
   end
 
   def is_friends_with?(other_user)
@@ -113,6 +138,20 @@ class User < ApplicationRecord
  || !Friend.where(other_user_id: id, user_id: other_user.id).empty?
   end
 
+  def is_send_request?(other_user)
+    !sent_requests.where(other_user_id: other_user.id, user_id: self.id).empty?
+  end
+  def is_receive_request?(other_user_id)
+    !received_requests.where(other_user_id:self.id , user_id:other_user_id).empty?
+  end
+
+
+  def find_friend(user_id)
+    z= user_id
+    x = Friend.find_by(other_user_id: z, user_id: self.id)
+    y = Friend.find_by(other_user_id: self.id, user_id: z)
+    x || y
+  end
 
   # Validates the size of an uploaded picture.
   def picture_size
