@@ -1,35 +1,27 @@
 <% if logged_in? %>
-<div id="page-contents">
-  <div class="container">
-    <div class="row">
-
-      <!-- Profile card -->
-      <div class="col-md-3 static">
-        <%= render 'shared/user_info' %>
+  <div id="page-contents">
+    <div class="container">
+      <div class="row">
+        <!-- Profile card -->
+        <div class="col-md-3 static">
+          <%= render 'shared/user_info' %>
+        </div>
+        <!-- end profile card -->
+        <div class="col-md-7">
+          <!-- Post Create Box -->
+          <%= render 'shared/post_form' %>
+          <!-- end post create -->
+          <!-- Posts -->
+          <%= render 'shared/feed' %>
+          <!-- end Posts -->
+        </div>
       </div>
-      <!-- end profile card -->
-
-      <div class="col-md-7">
-        <!-- Post Create Box -->
-        <%= render 'shared/post_form' %>
-        <!-- end post create -->
-        <!-- Posts -->
-        <%= render 'shared/feed' %>
-        <!-- end Posts -->
-      </div>
-
     </div>
   </div>
-</div>
-
 <% else %>
   <div class="center jumbotron">
-    <h1>Welcome to the Sample App</h1>
-    <h2>
-      This is the home page for the
-      <a href="http://www.railstutorial.org/">Ruby on Rails Tutorial</a>
-      sample application.
-    </h2>
+    <h1>Keep it Up</h1>
+    <h2>Welcome to our network</h2>
     <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
     <%= link_to "Already a user!", login_path, class: "btn btn-lg btn-primary" %>
   </div>

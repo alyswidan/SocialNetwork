@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="about-profile">
+    <div class="about-content-block">
+      <h4 class="grey"><i class="ion-ios-information-outline icon-in-title"></i>About Me</h4>
+      <p><%= @user.about_me %></p>
+    </div>
+    <div class="about-content-block">
+      <h4 class="grey"><i class="ion-ios-briefcase-outline icon-in-title"></i>Birth date</h4>
+      <div class="organization">
+        <div class="work-info">
+          <h5><%= @user.birthdate %></h5>
+        </div>
+      </div>
+    </div>
+    <div class="about-content-block">
+      <h4 class="grey"><i class="ion-ios-location-outline icon-in-title"></i>Location</h4>
+      <p><%= @user.city.name %></p>
+      <div class="google-maps">
+        <div id="map" class="map"></div>
+      </div>
+    </div>
+  </div>
+</div>
