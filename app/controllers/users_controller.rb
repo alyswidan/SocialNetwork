@@ -118,6 +118,7 @@ class UsersController < ApplicationController
   def check_friends
     @user =  User.find(params[:id])
     x = helpers.current_user.is_friends_with?(@user) || helpers.current_user.eql?(@user)
+
     redirect_to(@user) unless x
   end
 
