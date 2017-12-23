@@ -41,10 +41,15 @@ end
                gender: genders[rand(genders.length)])
 end
 
-users = User.all
 
 50.times do
   City.create!(name: Faker::Address.city)
+end
+# postsS
+users = User.order(:created_at).take(7)
+5.times do
+  caption = Faker::Lorem.sentence(5)
+  users.each { |user| user.posts.create!(caption: caption) }
 end
 
 users.each do |user|
@@ -68,3 +73,9 @@ end
 first_user = users.first
 buddies = users[2..50]
 buddies.each { |buddy| first_user.add_friend(buddy) }
+
+
+# Likes
+posts = Post.all
+first_post = posts.first
+users.each { |user| user.like(first_post) }

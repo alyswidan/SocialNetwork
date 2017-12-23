@@ -1,5 +1,6 @@
 class Post < ApplicationRecord
   belongs_to :user
+  has_many :likes
   #default_scope -> { order(created_at: :desc) }
   mount_uploader :picture, PictureUploader
   validates :caption, presence: true , length: { maximum: 500 }
