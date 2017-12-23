@@ -1,5 +1,5 @@
 <div class="profile-card">
-  <img src="http://placehold.it/300x300" alt="user" class="profile-photo" />
+  <img src="<%= current_user.avatar %>" alt="user" class="profile-photo" />
 
   <h5>
     <%= link_to current_user.full_name, user_path(current_user), class: "text-white"%>

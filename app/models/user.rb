@@ -30,33 +30,42 @@ class User < ApplicationRecord
 
   def buddies
     option1 = User.
-        select('u2.*').
-        joins('as u1 inner join friends on u1.id=friends.other_user_id
+              select('u2.*').
+              joins('as u1 inner join friends on u1.id=friends.other_user_id
                inner join users as u2 on u2.id=friends.user_id').
-        where('friends.other_user_id'=>id)
+              where('friends.other_user_id' => id)
 
     option2 = User.
-        joins('inner join friends on users.id = friends.other_user_id').
-        where('friends.user_id'=>id)
+              joins('inner join friends on users.id = friends.other_user_id').
+              where('friends.user_id' => id)
 
     User.from("(#{option1.to_sql} UNION #{option2.to_sql}) AS users")
   end
 
   def feed
-    query1= Post.where(is_public: true)
+    query1 = Post.where(is_public: true)
     friend_ids = buddies.ids.join(',')
     if friend_ids.present?
-      query2=Post.where("user_id IN (#{friend_ids})
-OR user_id = :user_id and is_public=false", user_id: id)
+      query2 = Post.where("user_id IN (#{friend_ids})
+      OR user_id = :user_id and is_public=false", user_id: id)
       Post.from("(#{query1.to_sql} Union #{query2.to_sql}) AS Posts")
           .order(created_at: :desc)
     else
       Post.where(is_public: true)
     end
-
-
   end
 
+  def avatar
+    debugger
+    picture.url unless picture.url.blank?
+    if gender == 'male'
+      ActionController::Base.helpers.asset_path('male_placeholder.png', digest: false)
+    elsif gender == 'female'
+      ActionController::Base.helpers.asset_path('female_placeholder.png', digest: false)
+    else
+      ActionController::Base.helpers.asset_path('unknown_placeholder.png', digest: false)
+    end
+  end
 
   def birthdate=(date)
 
@@ -65,14 +74,16 @@ OR user_id = :user_id and is_public=false", user_id: id)
     else
       super
     end
-
   end
+
   def full_name
     "#{first_name.capitalize} #{last_name.capitalize}"
   end
+
   def add_friend(other_user)
     friends.create(other_user_id: other_user.id)
   end
+
   def remove_friend(other_user)
     me_on_left = friends.find_by(other_user_id: other_user.id)
     me_on_right = Friend.where(user_id: other_user.id, other_user_id: self.id)[0]
@@ -90,6 +101,7 @@ OR user_id = :user_id and is_public=false", user_id: id)
  || !Friend.where(other_user_id: id, user_id: other_user.id).empty?
 
   end
+
   def index
     @users = User.paginate(page: params[:page])
   end

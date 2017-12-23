@@ -8,18 +8,23 @@
 
 
 
+genders = %i[male female]
 
 
 10.times do |n|
-User.create!(first_name: "Example#{n}",
-             last_name: 'User',
-             email: "user#{n}@railstutorial.org",
-             nickname: "hamada #{n + 1}#{n + 2}#{n + 3}",
-             about_me: Faker::Lorem.sentence(n+5),
-             password: 'password',
-             password_confirmation: 'password',
-             birthdate: ((n + 1) * 10).years.ago,
-             admin: true)
+  x = Faker::Avatar.image
+  puts x
+  User.create!(first_name: "Example#{n}",
+               last_name: 'User',
+               email: "user#{n}@railstutorial.org",
+               nickname: "hamada #{n + 1}#{n + 2}#{n + 3}",
+               about_me: Faker::Lorem.sentence(n+5),
+               password: 'password',
+               password_confirmation: 'password',
+               birthdate: ((n + 1) * 10).years.ago,
+               admin: true,
+               gender: genders[rand(genders.length)],
+               picture: x)
 end
 99.times do |n|
   first_name = Faker::Name.first_name
@@ -32,7 +37,8 @@ end
                email: email,
                password: password,
                password_confirmation: password,
-               birthdate: birthdate)
+               birthdate: birthdate,
+               gender: genders[rand(genders.length)])
 end
 
 users = User.all
@@ -50,7 +56,7 @@ end
 # add 50 random posts to each user posts
 
 users.each do |user|
-  50.times do |i|
+  3.times do |i|
     caption = Faker::Lorem.sentence(5 + i) + user.full_name
     user.posts.create!(caption: caption)
   end
