@@ -62,7 +62,7 @@ class User < ApplicationRecord
 
   def remove_request(other_user_id)
 
-    sent_requests.find(other_user_id:  other_user_id).destroy
+    sent_requests.find_by(other_user_id: other_user_id).destroy
   end
 
   def accept_request(friend_request)
@@ -75,14 +75,15 @@ class User < ApplicationRecord
     friends.create(other_user_id: other_user.id)
   end
 
-  def remove_friend(other_user)
-    me_on_left = friends.find_by(other_user_id: other_user.id)
-    me_on_right = Friend.where(user_id: other_user.id,other_user_id: self.id)[0]
-    if !me_on_left.nil?
-      me_on_left.destroy
-    else
-      me_on_right.destroy
-    end
+  def remove_friend(other_user_id)
+    # me_on_left = Friend.find_by(other_user_id: other_user_id, user_id: self.id)
+    # me_on_right = Friend.find_by(user_id: other_user_id, other_user_id: self.id)
+    # if !me_on_left.nil?
+    #   me_on_left.destroy
+    # else
+    #   me_on_right.destroy
+    # end
+    find_friend(other_user_id).destroy
   end
 
   def is_friends_with?(other_user)
@@ -94,12 +95,20 @@ class User < ApplicationRecord
   def is_send_request?(other_user)
     !sent_requests.where(other_user_id: other_user.id, user_id: self.id).empty?
   end
-  def is_receive_request?(other_user)
-    !received_requests.where(other_user_id:self.id , user_id:other_user.id).empty?
+  def is_receive_request?(other_user_id)
+    !received_requests.where(other_user_id:self.id , user_id:other_user_id).empty?
   end
 
   def index
     @users = User.paginate(page: params[:page])
+  end
+
+  def find_friend(user_id)
+
+    z= user_id
+   x = Friend.find_by(other_user_id: z, user_id: self.id)
+   y = Friend.find_by(other_user_id: self.id, user_id: z)
+   x || y
   end
 
 
