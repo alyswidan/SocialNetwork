@@ -29,6 +29,9 @@
 
         <ul class="nav navbar-nav navbar-right main-menu">
           <li class="dropdown">
+            <%= link_to "Advanced Search", advanced_search_path %>
+          </li>
+          <li class="dropdown">
             <%= link_to "News feed", home_path %>
           </li>
           <li class="dropdown">
@@ -37,7 +40,6 @@
           <li class="dropdown">
             <%= link_to "Friend requests", user_path(current_user) %>
           </li>
-
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               Account <b class="caret"></b>
@@ -51,31 +53,19 @@
               </li>
             </ul>
           </li>
-
         </ul>
-
-
-
-
         <%= form_for :advanced_search,
-                     url: advanced_search_path,
-                     html:{class:"navbar-form navbar-right hidden-sm"} do |f| %>
-
-
+                      url: advanced_search_path,
+                      html:{class:"navbar-form navbar-right hidden-sm"} do |f| %>
           <div class="input-group">
             <%= f.text_field :simple,
-                             class: 'form-control',
-                             placeholder:"Search friends" %>
+                              class: 'form-control',
+                              placeholder:"Search friends" %>
             <span class="input-group-btn">
               <%= f.submit "Search", class: "btn btn-primary" %>
             </span>
           </div>
-
-
         <% end %>
-
-
-
 
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container -->
