@@ -10,15 +10,8 @@
 
   <section class="col-xs-12 col-sm-6 col-md-12">
 
-
-
-    <% @user.received_requests.each do |user| %>
-
-      <article class="search-result row">
-        <%= render user %>
-      </article>
-
-    <% end %>
+    <%= render User.joins(:sent_requests).where(other_user_id: @user.id) %>
 
   </section>
+
 </div>
