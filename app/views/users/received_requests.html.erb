@@ -3,14 +3,14 @@
   <hgroup class="mb20">
     <h1>Friend Requests</h1>
     <h2 class="lead">
-      <strong class="text-danger"><%= pluralize(@user.received_requests.count,'result') %></strong>
+      <strong class="text-danger"><%= pluralize(@user.received_requests.count,'requests') %></strong>
       found
     </h2>
   </hgroup>
 
   <section class="col-xs-12 col-sm-6 col-md-12">
 
-    <%= render User.joins(:sent_requests).where(other_user_id: @user.id) %>
+    <%= render User.joins(:sent_requests).where('other_user_id=?', @user.id) %>
 
   </section>
 
